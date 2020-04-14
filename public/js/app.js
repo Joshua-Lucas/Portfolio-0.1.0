@@ -66011,27 +66011,27 @@ __webpack_require__.r(__webpack_exports__);
 
 var Nav = function Nav() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " m-1 flex justify-around"
+    className: " mt-4 flex font-accent lg:justify-around "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: ""
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "",
-    alt: "Logo"
+    alt: "Joshua Lucas | Fullstack Developer"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-between"
+    className: "flex lg:justify-between lg:text-xl lg:text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "pr-2",
+    className: "lg:pr-10 py-2",
     href: "#about"
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "pr-2",
+    className: "lg:pr-10 py-2 ",
     href: "#works"
   }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "pr-2",
+    className: "lg:pr-8 py-2",
     href: "#testimonials"
   }, "Testimonials"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "pr-2",
+    className: " lg:border-2 lg:border-brand lg:rounded-full lg:py-1 lg:px-2 hover:bg-brand hover:text-primary",
     href: "#contact"
   }, "Contact")));
 };
