@@ -13,7 +13,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body class="font-main bg-primary">
+<body class="font-main bg-primary text-onyx">
     <div id='root'></div>
 
 </body>

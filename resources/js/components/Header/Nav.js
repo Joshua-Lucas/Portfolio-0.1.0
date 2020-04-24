@@ -5,12 +5,12 @@ const Nav = () =>
     const [isToggled, setIsToggled] = useState(false);
    
     return (
-        <div className=' md:flex md:flex-row md:justify-between md:items-center md:mt-4 md:px-4 md:text-xl md:text-center xl:px-8  '>
+        <div className=' md:flex md:flex-row md:justify-between md:items-center md:mt-4 md:px-4 md:text-xl md:text-center xl:mx-auto xl:max-w-4/5 '>
             <div className="mt-4 px-4 flex font-accent items-center justify-between md:justify-around md:mt-0 ">
                 <div className="md:self-center md:pl-2 ">
                     <a href="/">
-                        <svg className="w-24 h-24 md:w-32 md:h-32 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200">
-                            <path id="Selection" fill="black" stroke="black" stroke-width="1"
+                        <svg className="w-24 h-24 fill-current text-onyx md:w-32 md:h-32 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200">
+                            <path id="Selection"  stroke-width="1"
                                     d="M 921.00,838.09
                                     C 921.00,838.09 910.00,838.09 910.00,838.09
                                         910.00,838.09 902.00,839.40 902.00,839.40
@@ -147,10 +147,10 @@ const Nav = () =>
                 </div>
             </div>
             <div className={isToggled ? 'flex flex-col items-center mt-2 bg-primary text-accent rounded shadow-xl ' : 'hidden md:flex md:flex-row md:justify-between md:text-xl md:text-center lg:pr-6'} >
-                <a className="w-3/4 py-3 text-center hover:text-brand md:pr-10 "href="#about">About</a>
-                <a className="w-3/4 py-3 text-center hover:text-brand md:pr-10  "href="#works">Works</a>
-                <a className="w-3/4 py-3 text-center hover:text-brand md:pr-8 "href="#testimonials">Testimonials</a>
-                <a className="w-3/4 py-3 text-center hover:text-brand md:border-2 md:border-brand md:rounded-full md:px-2  md:hover:bg-brand md:hover:text-primary"href="#contact">Contact</a>
+                <a className="w-3/4 py-2 text-center hover:text-brand md:pr-10 "href="#about">About</a>
+                <a className="w-3/4 py-2 text-center hover:text-brand md:pr-10  "href="#works">Works</a>
+                <a className="w-3/4 py-2 text-center hover:text-brand md:pr-8 "href="#testimonials">Testimonials</a>
+                <a className="w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-brand md:rounded-full md:px-2 md:hover:bg-brand md:hover:text-primary"href="#contact">Contact</a>
             </div>
         </div>
 
