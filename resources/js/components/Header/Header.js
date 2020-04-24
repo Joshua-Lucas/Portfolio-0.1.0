@@ -5,10 +5,10 @@ import Banner from './Banner'
 const Header = () => 
 {
         return(
-            <React.Fragment>
+            <div className="h-screen">
                 <Nav />
                 <Banner />  
-            </React.Fragment>
+            </div>
         );
 
 }

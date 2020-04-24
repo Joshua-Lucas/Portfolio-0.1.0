@@ -65834,6 +65834,28 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/img/profilePlaceholder.svg":
+/*!**********************************************!*\
+  !*** ./resources/img/profilePlaceholder.svg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/profilePlaceholder.svg?e069c8cb17eaaa67673ba22c8bfdb1b7";
+
+/***/ }),
+
+/***/ "./resources/img/setup3.svg":
+/*!**********************************!*\
+  !*** ./resources/img/setup3.svg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/setup3.svg?8cd0f4b492797fe0fa5700e4911960c4";
+
+/***/ }),
+
 /***/ "./resources/js/Index.js":
 /*!*******************************!*\
   !*** ./resources/js/Index.js ***!
@@ -65939,11 +65961,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ "./resources/js/components/Header/Header.js");
+/* harmony import */ var _Main_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main/Main */ "./resources/js/components/Main/Main.js");
+
 
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -65961,16 +65985,38 @@ var App = function App() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/profilePlaceholder.svg */ "./resources/img/profilePlaceholder.svg");
+/* harmony import */ var _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/setup3.svg */ "./resources/img/setup3.svg");
+/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_setup3_svg__WEBPACK_IMPORTED_MODULE_2__);
+
+
 
 
 var Banner = function Banner() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex justify-center mt-10"
+    className: "flex flex-col items-center mt-10 px-3  lg:max-h-screen"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex flex-col  items-center"
+    className: " flex flex-col pb-12 items-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: " text-4xl"
-  }, "A FullStack Developer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " developing and codeing with people in mind")));
+    className: "font-accent leading-none text-2xl lg:text-4xl"
+  }, "A Louisville based ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "text-accent text-4xl text-6xl"
+  }, "FullStack Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "text-xl"
+  }, " Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mt-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "w-64 h-64",
+    src: _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    alt: "Pic of me"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center lg:m-8 w-5/12 h-full "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    "class": " w-4/5 h-auto",
+    src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "my setup"
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Banner);
@@ -65995,7 +66041,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Header = function Header() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-screen"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -66042,7 +66090,7 @@ var Nav = function Nav() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "w-24 h-24 fill-current text-onyx md:w-32 md:h-32 ",
+    className: "w-24 h-24 fill-current text-secondary md:w-32 md:h-32 ",
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 1200 1200"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
@@ -66076,12 +66124,60 @@ var Nav = function Nav() {
     className: "w-3/4 py-2 text-center hover:text-brand md:pr-8 ",
     href: "#testimonials"
   }, "Testimonials"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-brand md:rounded-full md:px-2 md:hover:bg-brand md:hover:text-primary",
+    className: "w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary",
     href: "#contact"
   }, "Contact")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/About.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Main/About.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var About = function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " lg:-mt-20 bg-accent h-full"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "pt-20"
+  }, "Hi my name is Joshua"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (About);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/Main.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Main/Main.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About */ "./resources/js/components/Main/About.js");
+
+
+
+var Main = function Main() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Main);
 
 /***/ }),
 
