@@ -9,7 +9,7 @@ const Nav = () =>
             <div className="mt-4 px-4 flex font-accent items-center justify-between md:justify-around md:mt-0 ">
                 <div className="md:self-center md:pl-2 ">
                     <a href="/">
-                        <svg className="w-24 h-24 fill-current text-onyx md:w-32 md:h-32 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200">
+                        <svg className="w-24 h-24 fill-current text-secondary md:w-32 md:h-32 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200">
                             <path id="Selection"  stroke-width="1"
                                     d="M 921.00,838.09
                                     C 921.00,838.09 910.00,838.09 910.00,838.09
@@ -150,7 +150,7 @@ const Nav = () =>
                 <a className="w-3/4 py-2 text-center hover:text-brand md:pr-10 "href="#about">About</a>
                 <a className="w-3/4 py-2 text-center hover:text-brand md:pr-10  "href="#works">Works</a>
                 <a className="w-3/4 py-2 text-center hover:text-brand md:pr-8 "href="#testimonials">Testimonials</a>
-                <a className="w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-brand md:rounded-full md:px-2 md:hover:bg-brand md:hover:text-primary"href="#contact">Contact</a>
+                <a className="w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary"href="#contact">Contact</a>
             </div>
         </div>
 
