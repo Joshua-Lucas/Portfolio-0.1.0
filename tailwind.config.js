@@ -20,9 +20,9 @@ module.exports = {
       colors: 
       {
           brand: '#d1bfa7', //Soft Gold
-          accent: '#8e8e90', //Silver
+          accent: '#bd8c7d', //Rose Gold
           primary: '#f7f7f8',
-          secondary: '#bd8c7d', //Rose Gold
+          secondary: '#8e8e90', //Silver
           onyx: '#49494b'
       }
     },
