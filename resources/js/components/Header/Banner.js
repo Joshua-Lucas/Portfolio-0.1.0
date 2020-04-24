@@ -8,6 +8,7 @@ const Banner = () =>
                 <h1 className=" text-4xl">A FullStack Developer</h1>
                 <h2> developing and codeing with people in mind</h2>
             </div>
+
         </div>
 
     );
