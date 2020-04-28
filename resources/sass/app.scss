@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
+
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
+
+@keyframes trans-up {
+    0% {transform: translateY(10%)}
+    100% {transform: translateY(0)}
+}
+.fade-in-up{
+   animation: fade-in 2s , trans-up 1s;
+}
+
+
+
 @tailwind utilities;

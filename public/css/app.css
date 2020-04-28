@@ -623,6 +623,51 @@ video {
   }
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes trans-up {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes trans-up {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  -webkit-animation: fade-in 2s, trans-up 1s;
+          animation: fade-in 2s, trans-up 1s;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -5627,6 +5672,10 @@ video {
   padding: 1px;
 }
 
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -5815,6 +5864,16 @@ video {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.px-0\.5 {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
 }
 
 .pt-0 {
@@ -6119,6 +6178,22 @@ video {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt-0\.5 {
+  padding-top: 0.125rem;
+}
+
+.pr-0\.5 {
+  padding-right: 0.125rem;
+}
+
+.pb-0\.5 {
+  padding-bottom: 0.125rem;
+}
+
+.pl-0\.5 {
+  padding-left: 0.125rem;
 }
 
 .placeholder-transparent::-webkit-input-placeholder {
@@ -19359,6 +19434,10 @@ video {
     padding: 1px;
   }
 
+  .sm\:p-0\.5 {
+    padding: 0.125rem;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -19547,6 +19626,16 @@ video {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .sm\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
   }
 
   .sm\:pt-0 {
@@ -19851,6 +19940,22 @@ video {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt-0\.5 {
+    padding-top: 0.125rem;
+  }
+
+  .sm\:pr-0\.5 {
+    padding-right: 0.125rem;
+  }
+
+  .sm\:pb-0\.5 {
+    padding-bottom: 0.125rem;
+  }
+
+  .sm\:pl-0\.5 {
+    padding-left: 0.125rem;
   }
 
   .sm\:placeholder-transparent::-webkit-input-placeholder {
@@ -33092,6 +33197,10 @@ video {
     padding: 1px;
   }
 
+  .md\:p-0\.5 {
+    padding: 0.125rem;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -33280,6 +33389,16 @@ video {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .md\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
   }
 
   .md\:pt-0 {
@@ -33584,6 +33703,22 @@ video {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt-0\.5 {
+    padding-top: 0.125rem;
+  }
+
+  .md\:pr-0\.5 {
+    padding-right: 0.125rem;
+  }
+
+  .md\:pb-0\.5 {
+    padding-bottom: 0.125rem;
+  }
+
+  .md\:pl-0\.5 {
+    padding-left: 0.125rem;
   }
 
   .md\:placeholder-transparent::-webkit-input-placeholder {
@@ -46825,6 +46960,10 @@ video {
     padding: 1px;
   }
 
+  .lg\:p-0\.5 {
+    padding: 0.125rem;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -47013,6 +47152,16 @@ video {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .lg\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
   }
 
   .lg\:pt-0 {
@@ -47317,6 +47466,22 @@ video {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt-0\.5 {
+    padding-top: 0.125rem;
+  }
+
+  .lg\:pr-0\.5 {
+    padding-right: 0.125rem;
+  }
+
+  .lg\:pb-0\.5 {
+    padding-bottom: 0.125rem;
+  }
+
+  .lg\:pl-0\.5 {
+    padding-left: 0.125rem;
   }
 
   .lg\:placeholder-transparent::-webkit-input-placeholder {
@@ -60558,6 +60723,10 @@ video {
     padding: 1px;
   }
 
+  .xl\:p-0\.5 {
+    padding: 0.125rem;
+  }
+
   .xl\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -60746,6 +60915,16 @@ video {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .xl\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
   }
 
   .xl\:pt-0 {
@@ -61050,6 +61229,22 @@ video {
 
   .xl\:pl-px {
     padding-left: 1px;
+  }
+
+  .xl\:pt-0\.5 {
+    padding-top: 0.125rem;
+  }
+
+  .xl\:pr-0\.5 {
+    padding-right: 0.125rem;
+  }
+
+  .xl\:pb-0\.5 {
+    padding-bottom: 0.125rem;
+  }
+
+  .xl\:pl-0\.5 {
+    padding-left: 0.125rem;
   }
 
   .xl\:placeholder-transparent::-webkit-input-placeholder {

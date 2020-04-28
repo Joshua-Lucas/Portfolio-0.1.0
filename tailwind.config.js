@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
     extend: {
+      padding: {
+        '0.5': '0.125rem'
+      },
       maxWidth:
       {
           '1/4': '25%',
@@ -24,7 +27,8 @@ module.exports = {
           primary: '#f7f7f8',
           secondary: '#8e8e90', //Silver
           onyx: '#49494b'
-      }
+      },
+
     },
   },
   variants: {},
