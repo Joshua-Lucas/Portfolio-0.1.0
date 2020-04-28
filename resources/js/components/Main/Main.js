@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './About';
+import Skills from './Skills'
 
 
 const Main = () => 
@@ -7,6 +8,7 @@ const Main = () =>
     return (
         <React.Fragment>
             <About />
+            <Skills />
         </React.Fragment>
     );
 

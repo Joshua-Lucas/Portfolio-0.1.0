@@ -65997,14 +65997,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var Banner = function Banner() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col items-center mt-10 px-3 "
+    className: "flex flex-col items-center mt-10 px-5 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: " flex flex-col pb-12 items-start sm:items-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "leading-normal text-xl sm:text-center lg:text-4xl"
   }, "A Louisville based ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "text-accent leading-none inline-block pt-1 text-6xl lg:inline"
-  }, "FullStack Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "text-accent font-accent leading-none inline-block pt-1 text-6xl lg:inline"
+  }, "Full Stack Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "pt-1 text-xl"
   }, " Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-4 self-center"
@@ -66015,7 +66015,7 @@ var Banner = function Banner() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex justify-center lg:m-8 lg:mb-0 w-full h-full "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    "class": " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 lg:pb-0.5 ",
+    "class": " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 ",
     src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "my setup"
   })));
@@ -66117,16 +66117,16 @@ var Nav = function Nav() {
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: isToggled ? 'flex flex-col items-center mt-2 bg-primary text-accent rounded shadow-xl ' : 'hidden md:flex md:flex-row md:justify-between md:text-xl md:text-center lg:pr-6'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "w-3/4 py-2 text-center hover:text-brand md:pr-10 ",
+    className: "w-3/4 py-2 text-center hover:text-secondary md:pr-10 ",
     href: "#about"
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "w-3/4 py-2 text-center hover:text-brand md:pr-10  ",
+    className: "w-3/4 py-2 text-center hover:text-secondary md:pr-10  ",
     href: "#works"
   }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "w-3/4 py-2 text-center hover:text-brand md:pr-8 ",
+    className: "w-3/4 py-2 text-center hover:text-secondary md:pr-8 ",
     href: "#testimonials"
   }, "Testimonials"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary",
+    className: "w-3/4 py-2 text-center hover:text-secondary md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary",
     href: "#contact"
   }, "Contact")));
 };
@@ -66150,10 +66150,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var About = function About() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " -mt-1 sm:-m-2 lg:-m-3 bg-accent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "pt-10 lg:p-12"
-  }, "Hi my name is Joshua"));
+    className: "flex flex-col items-center -mt-1 px-5 text-primary bg-accent sm:-mt-2 lg:-mt-1 xl:-m-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "lg:w-3/5 pt-20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: " font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl "
+  }, "Hi, my name is Joshua Lucas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-center pt-6 leading-normal text-lg md:text-xl md:px-16 "
+  }, "I am an aspiring full stack developer who is passionate about developing intuitive, responsive software with the user in mind. I am driven,  hardworking, honest, and a loyal team player. I am a quick learner, perpetually seeking to sharpen my skills and grow in my knowledge of software development. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-center py-6 leading-normal text-lg md:text-xl  md:px-16 "
+  }, "When I am not at my computer, you can find me enjoying the outdoors with my wife, trying a new restaurant, or sharing a conversation with a friend over a cup of coffee. ")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
@@ -66172,14 +66178,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About */ "./resources/js/components/Main/About.js");
+/* harmony import */ var _Skills__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Skills */ "./resources/js/components/Main/Skills.js");
+
 
 
 
 var Main = function Main() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skills__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Main);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/Skills.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/Main/Skills.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Skills = function Skills() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bg-primary mt-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "TEST ELEMENT"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Skills);
 
 /***/ }),
 
