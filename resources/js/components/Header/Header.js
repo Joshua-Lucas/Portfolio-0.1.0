@@ -5,7 +5,7 @@ import Banner from './Banner'
 const Header = () => 
 {
         return(
-            <div className="h-screen">
+            <div className="fade-in-up">
                 <Nav />
                 <Banner />  
             </div>

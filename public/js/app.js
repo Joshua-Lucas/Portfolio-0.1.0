@@ -65967,7 +65967,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: ""
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -65995,25 +65997,25 @@ __webpack_require__.r(__webpack_exports__);
 
 var Banner = function Banner() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col items-center mt-10 px-3  lg:max-h-screen"
+    className: "flex flex-col items-center mt-10 px-3 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex flex-col pb-12 items-center "
+    className: " flex flex-col pb-12 items-start sm:items-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "font-accent leading-none text-2xl lg:text-4xl"
+    className: "leading-normal text-xl sm:text-center lg:text-4xl"
   }, "A Louisville based ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "text-accent text-4xl text-6xl"
+    className: "text-accent leading-none inline-block pt-1 text-6xl lg:inline"
   }, "FullStack Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "text-xl"
+    className: "pt-1 text-xl"
   }, " Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "mt-4"
+    className: "mt-4 self-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "w-64 h-64",
+    className: " w-56 h-56 pb-2 lg:w-64 lg:h-64",
     src: _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
     alt: "Pic of me"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center lg:m-8 w-5/12 h-full "
+    className: "flex justify-center lg:m-8 lg:mb-0 w-full h-full "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    "class": " w-4/5 h-auto",
+    "class": " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 lg:pb-0.5 ",
     src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "my setup"
   })));
@@ -66042,7 +66044,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Header = function Header() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-screen"
+    className: "fade-in-up"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
@@ -66148,9 +66150,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var About = function About() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " lg:-mt-20 bg-accent h-full"
+    className: " -mt-1 sm:-m-2 lg:-m-3 bg-accent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "pt-20"
+    className: "pt-10 lg:p-12"
   }, "Hi my name is Joshua"));
 };
 
