@@ -1,8 +1,13 @@
 module.exports = {
   theme: {
     extend: {
+      screens: {
+        '2xl' : {'min': '1680px'},
+      },
+
       padding: {
-        '0.5': '0.125rem'
+        '0.5': '0.125rem',
+        '0.25': '.0625rem'
       },
       maxWidth:
       {
@@ -17,7 +22,8 @@ module.exports = {
       fontFamily:
       {
         main: [ 'Josefin Sans', 'sans-serif'],
-        accent: ['Playfair Display', 'serif']
+        accent: ['Playfair Display', 'serif'],
+        permanent: ['Permanent Marker', 'cursive']
       },
 
       colors: 
