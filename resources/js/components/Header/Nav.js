@@ -147,10 +147,10 @@ const Nav = () =>
                 </div>
             </div>
             <div className={isToggled ? 'flex flex-col items-center mt-2 bg-primary text-accent rounded shadow-xl ' : 'hidden md:flex md:flex-row md:justify-between md:text-xl md:text-center lg:pr-6'} >
-                <a className="w-3/4 py-2 text-center hover:text-brand md:pr-10 "href="#about">About</a>
-                <a className="w-3/4 py-2 text-center hover:text-brand md:pr-10  "href="#works">Works</a>
-                <a className="w-3/4 py-2 text-center hover:text-brand md:pr-8 "href="#testimonials">Testimonials</a>
-                <a className="w-3/4 py-2 text-center hover:text-brand md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary"href="#contact">Contact</a>
+                <a className="w-3/4 py-2 text-center hover:text-secondary md:pr-10 "href="#about">About</a>
+                <a className="w-3/4 py-2 text-center hover:text-secondary md:pr-10  "href="#works">Works</a>
+                <a className="w-3/4 py-2 text-center hover:text-secondary md:pr-8 "href="#testimonials">Testimonials</a>
+                <a className="w-3/4 py-2 text-center hover:text-secondary md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary"href="#contact">Contact</a>
             </div>
         </div>
 
