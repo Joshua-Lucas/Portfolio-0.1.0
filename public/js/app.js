@@ -66155,7 +66155,7 @@ var About = function About() {
     className: "lg:w-3/5 pt-20"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: " font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl "
-  }, "Hi, my name is Joshua Lucas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Hi, I'm Joshua Lucas. Pleasure to meet you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-center pt-6 leading-normal text-lg md:text-xl md:px-16 "
   }, "I am an aspiring full stack developer who is passionate about developing intuitive, responsive software with the user in mind. I am driven,  hardworking, honest, and a loyal team player. I am a quick learner, perpetually seeking to sharpen my skills and grow in my knowledge of software development. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-center py-6 leading-normal text-lg md:text-xl  md:px-16 "
