@@ -65834,6 +65834,48 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/data/SkillsData.js":
+/*!**************************************!*\
+  !*** ./resources/data/SkillsData.js ***!
+  \**************************************/
+/*! exports provided: Backend, Frontend, softSkills */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Backend", function() { return Backend; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Frontend", function() { return Frontend; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "softSkills", function() { return softSkills; });
+var _ref, _ref2;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var Backend = [(_ref = {
+  img_src: '',
+  title: 'backend',
+  description: '',
+  section1: 'Language',
+  language: ['PHP', 'C#', 'SQL']
+}, _defineProperty(_ref, "section1", 'Frameworks/Practices'), _defineProperty(_ref, "tools", ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles']), _ref)];
+var Frontend = [{
+  img_src: '',
+  title: 'frontend',
+  description: '',
+  section1: 'Language',
+  language: ['HTML', 'CSS', 'JavaScript'],
+  section2: 'Frameworks/Practices',
+  tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA']
+}];
+var softSkills = [(_ref2 = {
+  img_src: '',
+  title: 'Soft Skills',
+  description: 'At the end of the day people are who matter most. I truly enjoy working with people and care about their sucess and satisfaction as much as my own.',
+  section1: 'Oppertunities I draw from',
+  language: ['Customer Service', 'Managment']
+}, _defineProperty(_ref2, "section1", 'Skills'), _defineProperty(_ref2, "tools", ['Honest', 'Loyal', 'Team Player', 'Teachable', 'Disciplined', 'Servant-Minded', 'Friendly', 'Leadership', 'Self-Motivated', 'Buisness-Minded']), _ref2)];
+
+/***/ }),
+
 /***/ "./resources/img/profilePlaceholder.svg":
 /*!**********************************************!*\
   !*** ./resources/img/profilePlaceholder.svg ***!
@@ -66150,6 +66192,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var About = function About() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "about",
     className: "flex flex-col items-center -mt-1 px-5 text-primary bg-accent sm:-mt-2 lg:-mt-1 xl:-m-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "lg:w-3/5 pt-20"
@@ -66202,15 +66245,81 @@ var Main = function Main() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _skills_SkillsContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./skills/SkillsContainer */ "./resources/js/components/Main/skills/SkillsContainer.js");
+/* harmony import */ var _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../data/SkillsData */ "./resources/data/SkillsData.js");
+
+
 
 
 var Skills = function Skills() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bg-primary mt-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "TEST ELEMENT"));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skills_SkillsContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    data: _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__["Frontend"]
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Skills);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/skills/Skill.js":
+/*!******************************************************!*\
+  !*** ./resources/js/components/Main/skills/Skill.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Skill = function Skill() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bg-onyx mt-8"
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Skill);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/skills/SkillsContainer.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/Main/skills/SkillsContainer.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Skill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Skill */ "./resources/js/components/Main/skills/Skill.js");
+
+
+
+var SkillsContainer = function SkillsContainer(_ref) {
+  var data = _ref.data;
+  var Skills = data.map(function (skill) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skill__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      img_src: skill.img_src,
+      title: skill.title,
+      description: skill.description,
+      section1: skill.section1,
+      language: skill.language.join(', '),
+      section2: skill.section2,
+      tools: skill.tools.map(function (tool) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, tool);
+      })
+    });
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Skills);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SkillsContainer);
 
 /***/ }),
 
