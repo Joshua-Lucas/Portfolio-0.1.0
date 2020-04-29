@@ -14,7 +14,7 @@ const Banner = () =>
                 </div>
             </div>
             <div className="flex justify-center lg:m-8 lg:mb-0 w-full h-full ">
-                <img class=" w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 "src={setup} alt="my setup"></img>
+                <img className=" w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 "src={setup} alt="my setup"></img>
             </div>
         </div>
 

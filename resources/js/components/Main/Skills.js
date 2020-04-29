@@ -7,7 +7,7 @@ import {Backend, Frontend, softSkills} from '../../../data/SkillsData';
 const Skills = () => 
 {
     return (
-        <div className="bg-primary mt-8" >
+        <div className="flex flex-col justify-center -mt-20" >
             <SkillsContainer data={Frontend}/>
         </div>
     );

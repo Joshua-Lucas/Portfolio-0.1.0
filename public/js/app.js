@@ -65856,15 +65856,16 @@ var Backend = [(_ref = {
   description: '',
   section1: 'Language',
   language: ['PHP', 'C#', 'SQL']
-}, _defineProperty(_ref, "section1", 'Frameworks/Practices'), _defineProperty(_ref, "tools", ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles']), _ref)];
+}, _defineProperty(_ref, "section1", 'Frameworks/Practices'), _defineProperty(_ref, "tools", ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles']), _defineProperty(_ref, "key", 1), _ref)];
 var Frontend = [{
-  img_src: '',
+  img_src: [Frontend],
   title: 'frontend',
   description: '',
   section1: 'Language',
   language: ['HTML', 'CSS', 'JavaScript'],
   section2: 'Frameworks/Practices',
-  tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA']
+  tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA'],
+  key: 2
 }];
 var softSkills = [(_ref2 = {
   img_src: '',
@@ -65872,7 +65873,18 @@ var softSkills = [(_ref2 = {
   description: 'At the end of the day people are who matter most. I truly enjoy working with people and care about their sucess and satisfaction as much as my own.',
   section1: 'Oppertunities I draw from',
   language: ['Customer Service', 'Managment']
-}, _defineProperty(_ref2, "section1", 'Skills'), _defineProperty(_ref2, "tools", ['Honest', 'Loyal', 'Team Player', 'Teachable', 'Disciplined', 'Servant-Minded', 'Friendly', 'Leadership', 'Self-Motivated', 'Buisness-Minded']), _ref2)];
+}, _defineProperty(_ref2, "section1", 'Skills'), _defineProperty(_ref2, "tools", ['Honest', 'Loyal', 'Team Player', 'Teachable', 'Disciplined', 'Servant-Minded', 'Friendly', 'Leadership', 'Self-Motivated', 'Buisness-Minded']), _defineProperty(_ref2, "key", 3), _ref2)];
+
+/***/ }),
+
+/***/ "./resources/img/frontend.svg":
+/*!************************************!*\
+  !*** ./resources/img/frontend.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/frontend.svg?bfa24f0efa006d153c9bd8ad4b5db808";
 
 /***/ }),
 
@@ -66057,7 +66069,7 @@ var Banner = function Banner() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex justify-center lg:m-8 lg:mb-0 w-full h-full "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    "class": " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 ",
+    className: " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 ",
     src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "my setup"
   })));
@@ -66193,9 +66205,9 @@ __webpack_require__.r(__webpack_exports__);
 var About = function About() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "about",
-    className: "flex flex-col items-center -mt-1 px-5 text-primary bg-accent sm:-mt-2 lg:-mt-1 xl:-m-3"
+    className: "flex flex-col items-center -mt-1 px-5 text-primary bg-accent sm:-mt-2 lg:-mt-1 xl:-mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "lg:w-3/5 pt-20"
+    className: "lg:w-3/5 pt-20 pb-40"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: " font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl "
   }, "Hi, I'm Joshua Lucas. Pleasure to meet you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -66253,7 +66265,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Skills = function Skills() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-primary mt-8"
+    className: "flex flex-col justify-center -mt-20"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skills_SkillsContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
     data: _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__["Frontend"]
   }));
@@ -66274,12 +66286,30 @@ var Skills = function Skills() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/frontend.svg */ "./resources/img/frontend.svg");
+/* harmony import */ var _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_frontend_svg__WEBPACK_IMPORTED_MODULE_1__);
 
 
-var Skill = function Skill() {
+
+var Skill = function Skill(_ref) {
+  var img = _ref.img,
+      title = _ref.title,
+      description = _ref.description,
+      section1 = _ref.section1,
+      language = _ref.language,
+      section2 = _ref.section2,
+      tools = _ref.tools,
+      key = _ref.key;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-onyx mt-8"
-  });
+    className: " flex flex-col bg-primary w-2/3 m-auto rounded-lg shadow-xl items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: key = 2 ? {
+      Frontend: _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a
+    } : undefined,
+    alt: "Frontend"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: ""
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, section1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, language)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, section2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, tools)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Skill);
@@ -66305,7 +66335,7 @@ var SkillsContainer = function SkillsContainer(_ref) {
   var data = _ref.data;
   var Skills = data.map(function (skill) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skill__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      img_src: skill.img_src,
+      img: skill.img_src,
       title: skill.title,
       description: skill.description,
       section1: skill.section1,
@@ -66313,7 +66343,8 @@ var SkillsContainer = function SkillsContainer(_ref) {
       section2: skill.section2,
       tools: skill.tools.map(function (tool) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, tool);
-      })
+      }),
+      key: skill.key
     });
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Skills);
