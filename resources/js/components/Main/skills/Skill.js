@@ -1,5 +1,7 @@
 import React from 'react';
 import Frontend from '../../../../img/frontend.svg';
+import { Backend } from '../../../../data/SkillsData';
+
 
 
 
@@ -8,7 +10,7 @@ const Skill = ({img,title,description,section1,language,section2,tools,key}) =>
 
     return (
         <div className=" flex flex-col bg-primary w-2/3 m-auto rounded-lg shadow-xl items-center" >
-            <img src={key=2 ? {Frontend} : key=1  ? {backend} : {softSkills}} alt='Frontend'></img>
+            <img src={img === 2 ? Frontend : 'test'}  ></img>
             <h1 className="">{title}</h1>
             <p>{description}</p>
             <div>

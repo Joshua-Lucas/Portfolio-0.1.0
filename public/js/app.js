@@ -65851,29 +65851,29 @@ var _ref, _ref2;
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var Backend = [(_ref = {
-  img_src: '',
+  img_src: 1,
   title: 'backend',
   description: '',
   section1: 'Language',
   language: ['PHP', 'C#', 'SQL']
-}, _defineProperty(_ref, "section1", 'Frameworks/Practices'), _defineProperty(_ref, "tools", ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles']), _defineProperty(_ref, "key", 1), _ref)];
+}, _defineProperty(_ref, "section1", 'Frameworks/Practices'), _defineProperty(_ref, "tools", ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles']), _defineProperty(_ref, "id", 1), _ref)];
 var Frontend = [{
-  img_src: [Frontend],
+  img_src: 2,
   title: 'frontend',
   description: '',
   section1: 'Language',
   language: ['HTML', 'CSS', 'JavaScript'],
   section2: 'Frameworks/Practices',
   tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA'],
-  key: 2
+  id: 2
 }];
 var softSkills = [(_ref2 = {
-  img_src: '',
+  img_src: 3,
   title: 'Soft Skills',
   description: 'At the end of the day people are who matter most. I truly enjoy working with people and care about their sucess and satisfaction as much as my own.',
   section1: 'Oppertunities I draw from',
   language: ['Customer Service', 'Managment']
-}, _defineProperty(_ref2, "section1", 'Skills'), _defineProperty(_ref2, "tools", ['Honest', 'Loyal', 'Team Player', 'Teachable', 'Disciplined', 'Servant-Minded', 'Friendly', 'Leadership', 'Self-Motivated', 'Buisness-Minded']), _defineProperty(_ref2, "key", 3), _ref2)];
+}, _defineProperty(_ref2, "section1", 'Skills'), _defineProperty(_ref2, "tools", ['Honest', 'Loyal', 'Team Player', 'Teachable', 'Disciplined', 'Servant-Minded', 'Friendly', 'Leadership', 'Self-Motivated', 'Buisness-Minded']), _defineProperty(_ref2, "id", 3), _ref2)];
 
 /***/ }),
 
@@ -66288,6 +66288,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/frontend.svg */ "./resources/img/frontend.svg");
 /* harmony import */ var _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_frontend_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../data/SkillsData */ "./resources/data/SkillsData.js");
+
 
 
 
@@ -66303,10 +66305,7 @@ var Skill = function Skill(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: " flex flex-col bg-primary w-2/3 m-auto rounded-lg shadow-xl items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: key = 2 ? {
-      Frontend: _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a
-    } : undefined,
-    alt: "Frontend"
+    src: img === 2 ? _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a : 'test'
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: ""
   }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, section1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, language)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, section2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, tools)));
@@ -66335,6 +66334,7 @@ var SkillsContainer = function SkillsContainer(_ref) {
   var data = _ref.data;
   var Skills = data.map(function (skill) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skill__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: skill.id,
       img: skill.img_src,
       title: skill.title,
       description: skill.description,
@@ -66343,8 +66343,7 @@ var SkillsContainer = function SkillsContainer(_ref) {
       section2: skill.section2,
       tools: skill.tools.map(function (tool) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, tool);
-      }),
-      key: skill.key
+      })
     });
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Skills);
