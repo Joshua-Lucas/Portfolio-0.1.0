@@ -16,7 +16,7 @@ export const Frontend = [
     {
         img_src: 2,
         title: 'frontend',        
-        description: '',
+        description: 'Blah BlahBlah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah ',
         section1: 'Language',
         language: ['HTML', 'CSS', 'JavaScript'],
         section2: 'Frameworks/Practices',

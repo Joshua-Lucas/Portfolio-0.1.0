@@ -65860,7 +65860,7 @@ var Backend = [(_ref = {
 var Frontend = [{
   img_src: 2,
   title: 'frontend',
-  description: '',
+  description: 'Blah BlahBlah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah ',
   section1: 'Language',
   language: ['HTML', 'CSS', 'JavaScript'],
   section2: 'Frameworks/Practices',
@@ -65877,14 +65877,36 @@ var softSkills = [(_ref2 = {
 
 /***/ }),
 
-/***/ "./resources/img/frontend.svg":
-/*!************************************!*\
-  !*** ./resources/img/frontend.svg ***!
-  \************************************/
+/***/ "./resources/img/Skills/backend.svg":
+/*!******************************************!*\
+  !*** ./resources/img/Skills/backend.svg ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/frontend.svg?bfa24f0efa006d153c9bd8ad4b5db808";
+module.exports = "/images/backend.svg?422850b5742a76a0dee10391c2d2e674";
+
+/***/ }),
+
+/***/ "./resources/img/Skills/frontend.svg":
+/*!*******************************************!*\
+  !*** ./resources/img/Skills/frontend.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/frontend.svg?4a69620d83dca60aea038ec6f4620418";
+
+/***/ }),
+
+/***/ "./resources/img/Skills/team.svg":
+/*!***************************************!*\
+  !*** ./resources/img/Skills/team.svg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/team.svg?e90faffc99f2653149abb6b43d8cc652";
 
 /***/ }),
 
@@ -65906,7 +65928,7 @@ module.exports = "/images/profilePlaceholder.svg?e069c8cb17eaaa67673ba22c8bfdb1b
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/setup3.svg?8cd0f4b492797fe0fa5700e4911960c4";
+module.exports = "/images/setup3.svg?25a625b022307c82820e05b4b2c5bd52";
 
 /***/ }),
 
@@ -66213,7 +66235,7 @@ var About = function About() {
   }, "Hi, I'm Joshua Lucas. Pleasure to meet you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-center pt-6 leading-normal text-lg md:text-xl md:px-16 "
   }, "I am an aspiring full stack developer who is passionate about developing intuitive, responsive software with the user in mind. I am driven,  hardworking, honest, and a loyal team player. I am a quick learner, perpetually seeking to sharpen my skills and grow in my knowledge of software development. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-center py-6 leading-normal text-lg md:text-xl  md:px-16 "
+    className: "text-center pt-6 leading-normal text-lg md:text-xl  md:px-16 "
   }, "When I am not at my computer, you can find me enjoying the outdoors with my wife, trying a new restaurant, or sharing a conversation with a friend over a cup of coffee. ")));
 };
 
@@ -66286,9 +66308,13 @@ var Skills = function Skills() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/frontend.svg */ "./resources/img/frontend.svg");
-/* harmony import */ var _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_frontend_svg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../data/SkillsData */ "./resources/data/SkillsData.js");
+/* harmony import */ var _img_Skills_frontend_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/Skills/frontend.svg */ "./resources/img/Skills/frontend.svg");
+/* harmony import */ var _img_Skills_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_Skills_frontend_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_Skills_backend_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/Skills/backend.svg */ "./resources/img/Skills/backend.svg");
+/* harmony import */ var _img_Skills_backend_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_Skills_backend_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_Skills_team_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../img/Skills/team.svg */ "./resources/img/Skills/team.svg");
+/* harmony import */ var _img_Skills_team_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_Skills_team_svg__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -66303,12 +66329,24 @@ var Skill = function Skill(_ref) {
       tools = _ref.tools,
       key = _ref.key;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex flex-col bg-primary w-2/3 m-auto rounded-lg shadow-xl items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: img === 2 ? _img_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a : 'test'
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: ""
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, section1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, language)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, section2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, tools)));
+    className: " flex flex-col bg-primary w-2/3 m-auto px-4 py-6 rounded-lg shadow-xl items-center lg:px-12 lg:py-20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "w-32 h-32 ",
+    src: img === 1 ? _img_Skills_backend_svg__WEBPACK_IMPORTED_MODULE_2___default.a : img === 2 ? _img_Skills_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a : _img_Skills_team_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: title
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center pt-5 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "pb-5 font-bold capitalize"
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "py-12 text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "pb-2 text-accent"
+  }, section1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, language)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "pb-2 text-accent"
+  }, section2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, tools)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Skill);
