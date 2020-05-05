@@ -65846,34 +65846,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Backend", function() { return Backend; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Frontend", function() { return Frontend; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "softSkills", function() { return softSkills; });
-var _ref, _ref2;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var Backend = [(_ref = {
+var Backend = [{
   img_src: 1,
   title: 'backend',
-  description: '',
+  description: 'I strive to create clean and reusable code. ',
   section1: 'Language',
-  language: ['PHP', 'C#', 'SQL']
-}, _defineProperty(_ref, "section1", 'Frameworks/Practices'), _defineProperty(_ref, "tools", ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles']), _defineProperty(_ref, "id", 1), _ref)];
+  language: ['PHP', 'C#', 'SQL'],
+  section2: 'Frameworks/Practices',
+  tools: ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles'],
+  id: 1
+}];
 var Frontend = [{
   img_src: 2,
   title: 'frontend',
-  description: 'Blah BlahBlah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah ',
+  description: 'I enjoy creating intuative and responsive designs that lend to a great user experience. ',
   section1: 'Language',
   language: ['HTML', 'CSS', 'JavaScript'],
   section2: 'Frameworks/Practices',
   tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA'],
   id: 2
 }];
-var softSkills = [(_ref2 = {
+var softSkills = [{
   img_src: 3,
-  title: 'Soft Skills',
+  title: 'Essential Skills',
   description: 'At the end of the day people are who matter most. I truly enjoy working with people and care about their sucess and satisfaction as much as my own.',
   section1: 'Oppertunities I draw from',
-  language: ['Customer Service', 'Managment']
-}, _defineProperty(_ref2, "section1", 'Skills'), _defineProperty(_ref2, "tools", ['Honest', 'Loyal', 'Team Player', 'Teachable', 'Disciplined', 'Servant-Minded', 'Friendly', 'Leadership', 'Self-Motivated', 'Buisness-Minded']), _defineProperty(_ref2, "id", 3), _ref2)];
+  language: ['Customer Service', 'Managment'],
+  section2: 'Skills',
+  tools: ['Honest', 'Loyal', 'Teachable', 'Team Player', 'Disciplined', 'Self-Motivated', 'Servant-Minded', 'Friendly', 'Buisness Acumen'],
+  id: 3
+}];
 
 /***/ }),
 
@@ -66233,9 +66235,9 @@ var About = function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: " font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl "
   }, "Hi, I'm Joshua Lucas. Pleasure to meet you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-center pt-6 leading-normal text-lg md:text-xl md:px-16 "
+    className: "text-center pt-6 leading-normal text-lg font-thin md:text-xl md:px-16 "
   }, "I am an aspiring full stack developer who is passionate about developing intuitive, responsive software with the user in mind. I am driven,  hardworking, honest, and a loyal team player. I am a quick learner, perpetually seeking to sharpen my skills and grow in my knowledge of software development. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-center pt-6 leading-normal text-lg md:text-xl  md:px-16 "
+    className: "text-center pt-6 leading-normal text-lg font-thin md:text-xl  md:px-16 "
   }, "When I am not at my computer, you can find me enjoying the outdoors with my wife, trying a new restaurant, or sharing a conversation with a friend over a cup of coffee. ")));
 };
 
@@ -66287,9 +66289,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var Skills = function Skills() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center -mt-20"
+    className: "flex flex-col justify-center -mt-20 divide-y divide-secondary md:flex-row md:divide-x md:max-w-3/4 md:mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skills_SkillsContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
     data: _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__["Frontend"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skills_SkillsContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    data: _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__["Backend"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skills_SkillsContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    data: _data_SkillsData__WEBPACK_IMPORTED_MODULE_2__["softSkills"]
   }));
 };
 
@@ -66329,24 +66335,32 @@ var Skill = function Skill(_ref) {
       tools = _ref.tools,
       key = _ref.key;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex flex-col bg-primary w-2/3 m-auto px-4 py-6 rounded-lg shadow-xl items-center lg:px-12 lg:py-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: " flex flex-col bg-primary w-5/6 m-auto px-4 py-12 text-xl rounded-lg shadow-xl items-center md:m-0 md:space-y-8 lg:px-12 lg:py-20 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    clssName: ""
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "w-32 h-32 ",
     src: img === 1 ? _img_Skills_backend_svg__WEBPACK_IMPORTED_MODULE_2___default.a : img === 2 ? _img_Skills_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a : _img_Skills_team_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
     alt: title
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-center pt-5 "
+    className: "text-center pt-5  md:p-0 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "pb-5 font-bold capitalize"
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "py-12 text-center"
+    className: "pb-5 text-2xl font-bold capitalize md:p-0 "
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "font-thin"
+  }, description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "py-12 text-center md:p-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "pb-2 text-accent"
-  }, section1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, language)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pb-2 text-accent md:p-0"
+  }, section1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "font-thin"
+  }, language)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "pb-2 text-accent"
-  }, section2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, tools)));
+    className: "pb-2 text-accent md:p-0"
+  }, section2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "font-thin"
+  }, tools)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Skill);

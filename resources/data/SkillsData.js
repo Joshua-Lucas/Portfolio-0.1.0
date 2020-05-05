@@ -2,10 +2,10 @@ export const Backend = [
     {
         img_src: 1,
         title: 'backend',
-        description: '',
+        description: 'I strive to create clean and reusable code. ',
         section1: 'Language',
         language: ['PHP', 'C#', 'SQL'],
-        section1: 'Frameworks/Practices',
+        section2: 'Frameworks/Practices',
         tools: ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles'],
         id: 1
     }
@@ -16,7 +16,7 @@ export const Frontend = [
     {
         img_src: 2,
         title: 'frontend',        
-        description: 'Blah BlahBlah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah ',
+        description: 'I enjoy creating intuative and responsive designs that lend to a great user experience. ',
         section1: 'Language',
         language: ['HTML', 'CSS', 'JavaScript'],
         section2: 'Frameworks/Practices',
@@ -29,12 +29,12 @@ export const Frontend = [
 export const softSkills = [
     {
         img_src: 3,
-        title: 'Soft Skills',
+        title: 'Essential Skills',
         description: 'At the end of the day people are who matter most. I truly enjoy working with people and care about their sucess and satisfaction as much as my own.',
         section1: 'Oppertunities I draw from',
         language: ['Customer Service', 'Managment' ],
-        section1: 'Skills',
-        tools: ['Honest', 'Loyal', 'Team Player', 'Teachable','Disciplined', 'Servant-Minded','Friendly','Leadership', 'Self-Motivated', 'Buisness-Minded'],
+        section2: 'Skills',
+        tools: ['Honest', 'Loyal',  'Teachable', 'Team Player','Disciplined','Self-Motivated', 'Servant-Minded','Friendly',  'Buisness Acumen'],
         id: 3
     }
 ]
