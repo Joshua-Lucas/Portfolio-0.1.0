@@ -65879,6 +65879,17 @@ var softSkills = [{
 
 /***/ }),
 
+/***/ "./resources/img/Icons/Github.svg":
+/*!****************************************!*\
+  !*** ./resources/img/Icons/Github.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Github.svg?ffeca8c2de7d7b35bada5739c257e041";
+
+/***/ }),
+
 /***/ "./resources/img/Skills/backend.svg":
 /*!******************************************!*\
   !*** ./resources/img/Skills/backend.svg ***!
@@ -66258,12 +66269,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About */ "./resources/js/components/Main/About.js");
 /* harmony import */ var _Skills__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Skills */ "./resources/js/components/Main/Skills.js");
+/* harmony import */ var _Works__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Works */ "./resources/js/components/Main/Works.js");
+
 
 
 
 
 var Main = function Main() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skills__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skills__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Works__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Main);
@@ -66303,6 +66316,97 @@ var Skills = function Skills() {
 
 /***/ }),
 
+/***/ "./resources/js/components/Main/Works.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Main/Works.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects/ProjectContainer */ "./resources/js/components/Main/projects/ProjectContainer.js");
+/* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/Icons/Github.svg */ "./resources/img/Icons/Github.svg");
+/* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2__);
+
+
+ // import Projects from '../../../data/WorksData';
+
+var Works = function Works() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "works"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl"
+  }, "My Works")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "hover:text-secondary md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary",
+    href: "https://github.com/Joshua-Lucas"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "inline",
+    src: _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2___default.a
+  }), "See Projects I'm Working On"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Works);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/projects/Project.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/Main/projects/Project.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Project = function Project() {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "test"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Project);
+
+/***/ }),
+
+/***/ "./resources/js/components/Main/projects/ProjectContainer.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Main/projects/ProjectContainer.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Project__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Project */ "./resources/js/components/Main/projects/Project.js");
+
+
+
+var ProjectContainer = function ProjectContainer(_ref) {
+  var data = _ref.data;
+  var Skills = data.map(function (project) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: project.id,
+      title: project.title,
+      description: project.description,
+      link: project.link
+    });
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Skills);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProjectContainer);
+
+/***/ }),
+
 /***/ "./resources/js/components/Main/skills/Skill.js":
 /*!******************************************************!*\
   !*** ./resources/js/components/Main/skills/Skill.js ***!
@@ -66336,9 +66440,7 @@ var Skill = function Skill(_ref) {
       key = _ref.key;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: " flex flex-col bg-primary w-5/6 m-auto px-4 py-12 text-lg rounded-lg shadow-xl items-center  md:m-0 md:space-y-8 lg:px-12 lg:py-20 2xl:text-xl"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    clssName: ""
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "w-32 h-32 ",
     src: img === 1 ? _img_Skills_backend_svg__WEBPACK_IMPORTED_MODULE_2___default.a : img === 2 ? _img_Skills_frontend_svg__WEBPACK_IMPORTED_MODULE_1___default.a : _img_Skills_team_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
     alt: title

@@ -14,7 +14,7 @@ const Skill = ({img,title,description,section1,language,section2,tools,key}) =>
 
     return (
         <div className=" flex flex-col bg-primary w-5/6 m-auto px-4 py-12 text-lg rounded-lg shadow-xl items-center  md:m-0 md:space-y-8 lg:px-12 lg:py-20 2xl:text-xl" >
-            <div clssName="">
+            <div >
                 <img className="w-32 h-32 " src={img === 1 ? Backend : img === 2 ? Frontend : Team} alt={title} ></img>
             </div>
             <div className="flex-1 md:space-y-4 md:grid md:grid-rows-4 gap-2 ">
