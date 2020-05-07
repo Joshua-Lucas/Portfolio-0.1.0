@@ -65879,6 +65879,32 @@ var softSkills = [{
 
 /***/ }),
 
+/***/ "./resources/data/WorksData.js":
+/*!*************************************!*\
+  !*** ./resources/data/WorksData.js ***!
+  \*************************************/
+/*! exports provided: WorkProjects */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorkProjects", function() { return WorkProjects; });
+var WorkProjects = [{
+  id: 1,
+  img_src: 'https://res.cloudinary.com/jlucompany/image/upload/c_scale,w_386/v1588888829/Portfolio/ThreeAmigos_uki0mx.jpg',
+  title: 'ThreeAmigos',
+  description: 'This is my first project, a project managments sytem for a mock company. Sign in using guest@3amigos.com Password: 12345678 ',
+  link: "http://threeamigosflooring.herokuapp.com/"
+}, {
+  id: 2,
+  img_src: 'https://res.cloudinary.com/jlucompany/image/upload/c_scale,w_386/v1588888633/Portfolio/ScoreCard_rf1gao.png',
+  title: 'ScoreCard',
+  description: 'A React project, a digital Scorecard',
+  link: "https://scorecard.netlify.app/"
+}];
+
+/***/ }),
+
 /***/ "./resources/img/Icons/Github.svg":
 /*!****************************************!*\
   !*** ./resources/img/Icons/Github.svg ***!
@@ -66330,9 +66356,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects/ProjectContainer */ "./resources/js/components/Main/projects/ProjectContainer.js");
 /* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/Icons/Github.svg */ "./resources/img/Icons/Github.svg");
 /* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _data_WorksData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../data/WorksData */ "./resources/data/WorksData.js");
 
 
- // import Projects from '../../../data/WorksData';
+
+
 
 var Works = function Works() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -66341,7 +66369,11 @@ var Works = function Works() {
     id: "works"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl"
-  }, "My Works")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "My Works")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid grid-flow-col w-1/2 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    data: _data_WorksData__WEBPACK_IMPORTED_MODULE_3__["WorkProjects"]
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "hover:text-secondary md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary",
     href: "https://github.com/Joshua-Lucas"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -66367,8 +66399,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var Project = function Project() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "test"));
+var Project = function Project(_ref) {
+  var img_src = _ref.img_src,
+      title = _ref.title,
+      description = _ref.description,
+      link = _ref.link;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid grid-rows-2 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "hover:opacity-0",
+    src: img_src,
+    alt: title
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figcaption", {
+    className: "flex flex-col items-center opacity-0 hover:opacity-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: link
+  }, "Visit Website"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "",
+    src: img_src,
+    alt: title
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-3/5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: link
+  }, "Visit Website")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Project);
@@ -66392,15 +66446,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProjectContainer = function ProjectContainer(_ref) {
   var data = _ref.data;
-  var Skills = data.map(function (project) {
+  var Projects = data.map(function (project) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: project.id,
+      img_src: project.img_src,
       title: project.title,
       description: project.description,
       link: project.link
     });
   });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Skills);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Projects);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProjectContainer);

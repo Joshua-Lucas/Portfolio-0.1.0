@@ -1,14 +1,15 @@
 import React from 'react';
-import Project from './Project'
+import Project from './Project';
 
 
 
 const ProjectContainer = ({data}) => 
 {
-    const Skills = data.map(project =>
+    const Projects = data.map((project) =>
     {
         return <Project 
                 key={project.id}
+                img_src={project.img_src}
                 title={project.title}        
                 description={project.description}
                 link={project.link}
@@ -17,7 +18,7 @@ const ProjectContainer = ({data}) =>
 
     return (
         <React.Fragment>
-            {Skills}
+            {Projects}
         </React.Fragment>
     );
 
