@@ -65879,43 +65879,6 @@ var softSkills = [{
 
 /***/ }),
 
-/***/ "./resources/data/WorksData.js":
-/*!*************************************!*\
-  !*** ./resources/data/WorksData.js ***!
-  \*************************************/
-/*! exports provided: WorkProjects */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorkProjects", function() { return WorkProjects; });
-var WorkProjects = [{
-  id: 1,
-  img_src: 'https://res.cloudinary.com/jlucompany/image/upload/v1589054327/Portfolio/ThreeAmigos2_azzn4r.jpg',
-  title: 'ThreeAmigos',
-  description: 'This is my first project, a project managments system for a mock company. (Sign in using guest@3amigos.com Password: 12345678) ',
-  link: "http://threeamigosflooring.herokuapp.com/"
-}, {
-  id: 2,
-  img_src: 'https://res.cloudinary.com/jlucompany/image/upload/v1589054331/Portfolio/ScoreCard2_ga58i8.png',
-  title: 'ScoreCard',
-  description: 'A digital scorecard created using React',
-  link: "https://scorecard.netlify.app/"
-}];
-
-/***/ }),
-
-/***/ "./resources/img/Icons/Github.svg":
-/*!****************************************!*\
-  !*** ./resources/img/Icons/Github.svg ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Github.svg?8849c6d4a72fbdc03fa1be7cb269e79a";
-
-/***/ }),
-
 /***/ "./resources/img/Skills/backend.svg":
 /*!******************************************!*\
   !*** ./resources/img/Skills/backend.svg ***!
@@ -66351,11 +66314,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects/ProjectContainer */ "./resources/js/components/Main/projects/ProjectContainer.js");
-/* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/Icons/Github.svg */ "./resources/img/Icons/Github.svg");
-/* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _data_WorksData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../data/WorksData */ "./resources/data/WorksData.js");
-
-
 
 
 
@@ -66368,9 +66326,7 @@ var Works = function Works() {
     className: "font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl"
   }, "My Works")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-wrap w-full  md:px-0 lg:w-3/4 xl:w-3/5 justify-center my-12 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    data: _data_WorksData__WEBPACK_IMPORTED_MODULE_3__["WorkProjects"]
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: " flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-secondary md:rounded-full md:px-2 md:pr-3 hover:bg-secondary md:hover:text-primary",
     href: "https://github.com/Joshua-Lucas"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -66444,12 +66400,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Project__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Project */ "./resources/js/components/Main/projects/Project.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var ProjectContainer = function ProjectContainer(_ref) {
-  var data = _ref.data;
-  var Projects = data.map(function (project) {
+
+var ProjectContainer = function ProjectContainer() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      _useState2 = _slicedToArray(_useState, 2),
+      Loading = _useState2[0],
+      setLoading = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      Projects = _useState4[0],
+      setProjects = _useState4[1]; // Fetches data from Projects Table
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    fetch('/api/projects').then(function (resp) {
+      return resp.json();
+    }).then(function (projects) {
+      return setProjects(projects);
+    }).then(function (load) {
+      return setLoading(false);
+    });
+  }, [Loading]);
+  var work = Projects.map(function (project) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: project.id,
       img_src: project.img_src,
@@ -66457,8 +66444,18 @@ var ProjectContainer = function ProjectContainer(_ref) {
       description: project.description,
       link: project.link
     });
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Projects);
+  }); // const work = data.map((project) =>
+  // {
+  //     return <Project 
+  //             key={project.id}
+  //             img_src={project.img_src}
+  //             title={project.title}        
+  //             description={project.description}
+  //             link={project.link}
+  //             />
+  // });
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, work);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProjectContainer);

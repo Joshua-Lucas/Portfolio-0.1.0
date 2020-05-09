@@ -1,11 +1,23 @@
-import React from 'react';
+import React,{ useState, useEffect} from 'react';
 import Project from './Project';
 
 
 
-const ProjectContainer = ({data}) => 
+const ProjectContainer = () => 
 {
-    const Projects = data.map((project) =>
+    const [Loading, setLoading] = useState(true);
+    const [Projects, setProjects] = useState([]); 
+
+    // Fetches data from Projects Table
+    useEffect(() => {
+        fetch('/api/projects')
+        .then(resp =>  resp.json())
+        .then(projects => setProjects(projects))
+        .then(load => setLoading(false))
+    }, [Loading]);
+
+
+     const work = Projects.map((project) =>
     {
         return <Project 
                 key={project.id}
@@ -16,9 +28,21 @@ const ProjectContainer = ({data}) =>
                 />
     });
 
+
+    // const work = data.map((project) =>
+    // {
+    //     return <Project 
+    //             key={project.id}
+    //             img_src={project.img_src}
+    //             title={project.title}        
+    //             description={project.description}
+    //             link={project.link}
+    //             />
+    // });
+
     return (
         <React.Fragment>
-            {Projects}
+            {work}
         </React.Fragment>
     );
 

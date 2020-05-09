@@ -1,7 +1,5 @@
 import React from 'react';
 import ProjectContainer from './projects/ProjectContainer';
-import Github from '../../../img/Icons/Github.svg';
-import {WorkProjects} from '../../../data/WorksData';
 
 
 
@@ -14,7 +12,7 @@ const Works = () =>
                 <h1 className="font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl">My Works</h1>
             </div>
             <div className="flex flex-wrap w-full  md:px-0 lg:w-3/4 xl:w-3/5 justify-center my-12 ">
-               <ProjectContainer data={WorkProjects}/>
+               <ProjectContainer />
             </div>
             <a className=" flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-secondary md:rounded-full md:px-2 md:pr-3 hover:bg-secondary md:hover:text-primary" href="https://github.com/Joshua-Lucas">
 
