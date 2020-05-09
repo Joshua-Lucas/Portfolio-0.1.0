@@ -66327,8 +66327,9 @@ var Works = function Works() {
   }, "My Works")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-wrap w-full  md:px-0 lg:w-3/4 xl:w-3/5 justify-center my-12 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: " flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-secondary md:rounded-full md:px-2 md:pr-3 hover:bg-secondary md:hover:text-primary",
-    href: "https://github.com/Joshua-Lucas"
+    className: "flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-secondary md:rounded-full md:px-2 md:pr-3 hover:bg-secondary md:hover:text-primary",
+    href: "https://github.com/Joshua-Lucas",
+    target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     className: "w-12 h-12 text-center fill-current hover:text-primary",
     version: "1.1",
@@ -66380,7 +66381,8 @@ var Project = function Project(_ref) {
     className: "text-center mb-8 break-words "
   }, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "text-center lg:w-3/5 self-center border-2 border-brand rounded-full  py-2 px-2 hover:bg-brand hover:text-primary",
-    href: link
+    href: link,
+    target: "_blank"
   }, "Visit Website"))));
 };
 
