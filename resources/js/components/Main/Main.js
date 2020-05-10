@@ -1,7 +1,8 @@
 import React from 'react';
 import About from './About';
-import Skills from './Skills'
-import Works from './Works'
+import Skills from './Skills';
+import Works from './Works';
+import Contact from './Contact';
 
 
 const Main = () => 
@@ -11,6 +12,7 @@ const Main = () =>
             <About />
             <Skills />
             <Works />
+            <Contact />
         </React.Fragment>
     );
 

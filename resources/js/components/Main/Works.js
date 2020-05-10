@@ -7,7 +7,7 @@ import ProjectContainer from './projects/ProjectContainer';
 const Works = () => 
 {
     return (
-        <div className="flex flex-col items-center py-10 lg:py-32 px-5" >
+        <div className="flex flex-col items-center py-10 lg:pt-24 lg:pb-48 px-5" >
             <div id='works'>
                 <h1 className="font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl">My Works</h1>
             </div>
