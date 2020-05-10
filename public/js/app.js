@@ -65879,6 +65879,28 @@ var softSkills = [{
 
 /***/ }),
 
+/***/ "./resources/img/Icons/Github.svg":
+/*!****************************************!*\
+  !*** ./resources/img/Icons/Github.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Github.svg?8849c6d4a72fbdc03fa1be7cb269e79a";
+
+/***/ }),
+
+/***/ "./resources/img/Icons/Linkedin.svg":
+/*!******************************************!*\
+  !*** ./resources/img/Icons/Linkedin.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Linkedin.svg?6abb49aca104551103bde18f1a62498b";
+
+/***/ }),
+
 /***/ "./resources/img/Skills/backend.svg":
 /*!******************************************!*\
   !*** ./resources/img/Skills/backend.svg ***!
@@ -65909,6 +65931,28 @@ module.exports = "/images/frontend.svg?4a69620d83dca60aea038ec6f4620418";
 /***/ (function(module, exports) {
 
 module.exports = "/images/team.svg?e90faffc99f2653149abb6b43d8cc652";
+
+/***/ }),
+
+/***/ "./resources/img/header/JLlogo.svg":
+/*!*****************************************!*\
+  !*** ./resources/img/header/JLlogo.svg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/JLlogo.svg?0959246ae46ddb3230e62273fb88772f";
+
+/***/ }),
+
+/***/ "./resources/img/icons/tailwind-css-seeklogo.com.svg":
+/*!***********************************************************!*\
+  !*** ./resources/img/icons/tailwind-css-seeklogo.com.svg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/tailwind-css-seeklogo.com.svg?bdf9bc2b513dbc3ccc57c847d00bed45";
 
 /***/ }),
 
@@ -66067,15 +66111,104 @@ var App = function App() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_icons_tailwind_css_seeklogo_com_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/icons/tailwind-css-seeklogo.com.svg */ "./resources/img/icons/tailwind-css-seeklogo.com.svg");
+/* harmony import */ var _img_icons_tailwind_css_seeklogo_com_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_icons_tailwind_css_seeklogo_com_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_header_JLlogo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/header/JLlogo.svg */ "./resources/img/header/JLlogo.svg");
+/* harmony import */ var _img_header_JLlogo_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_header_JLlogo_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Social__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Social */ "./resources/js/components/Footer/Social.js");
+
+
+
 
 
 var Footer = function Footer() {
+  var getCurrentYear = function getCurrentYear() {
+    var mil = Date.now();
+    var sec = mil / 1000;
+    var min = sec / 60;
+    var hour = min / 60;
+    var day = hour / 24;
+    var year = day / 365;
+    var currentYear = Math.round(1970 + year);
+    return currentYear;
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-accent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Test"));
+    className: "flex flex-col items-center justify-center pb-12 bg-accent"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: " w-40 h-40",
+    src: _img_header_JLlogo_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "Joshua Lucas || FullStack Developer"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-base"
+  }, "Developed by me \xA9 ", getCurrentYear(), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-xs"
+  }, "Design inspired from Matt Farley's portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "pt-10 text-sm"
+  }, "Styled using", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "pl-2 font-semibold",
+    href: "https://tailwindcss.com/",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "inline w-4 h-4",
+    src: _img_icons_tailwind_css_seeklogo_com_svg__WEBPACK_IMPORTED_MODULE_1___default.a
+  }), " Tailwind CSS"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer/Social.js":
+/*!**************************************************!*\
+  !*** ./resources/js/components/Footer/Social.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/Icons/Github.svg */ "./resources/img/Icons/Github.svg");
+/* harmony import */ var _img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_Icons_Github_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_Icons_Linkedin_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/Icons/Linkedin.svg */ "./resources/img/Icons/Linkedin.svg");
+/* harmony import */ var _img_Icons_Linkedin_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_Icons_Linkedin_svg__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+var Social = function Social() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center pt-8 pb-12 bg-accent space-x-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "p-1 border-onyx border-2 fill-current rounded-full hover:bg-onyx hover:text-accent",
+    href: "https://github.com/Joshua-Lucas",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "w-10 h-10 p-1  ",
+    viewBox: "0 0 60 60"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    transform: "translate(10,10)",
+    d: "M14.4252739,36.5168887 C14.4252739,36.0671729 14.4094072,34.8772272 14.4003405,33.2968305 C9.2651779,34.440294 8.18170506,30.7588994 8.18170506,30.7588994 C7.34190028,28.5719093 6.13149339,27.9897191 6.13149339,27.9897191 C4.45528384,26.8148801 6.25842744,26.8392833 6.25842744,26.8392833 C8.111438,26.9729198 9.08611021,28.7903759 9.08611021,28.7903759 C10.7328529,31.6827342 13.4064015,30.8483777 14.4592741,30.3638002 C14.6270084,29.1401549 15.1041445,28.3057984 15.6311475,27.8328415 C11.5318575,27.3552363 7.22176626,25.7306815 7.22176626,18.4771257 C7.22176626,16.4109894 7.94143703,14.7213595 9.12237709,13.3977773 C8.93310934,12.9190101 8.29843906,10.9946447 9.30371145,8.38815229 C9.30371145,8.38815229 10.8541203,7.8791716 14.3799404,10.3287864 C15.8521487,9.90928408 17.4320244,9.69778982 19.0028333,9.69081748 C20.5702423,9.69778982 22.1489846,9.90928408 23.624593,10.3287864 C27.1481464,7.8791716 28.6962885,8.38815229 28.6962885,8.38815229 C29.7038276,10.9934827 29.0702907,12.917848 28.8798896,13.3977773 C30.0630963,14.7213595 30.7771004,16.4109894 30.7771004,18.4771257 C30.7771004,25.7492744 26.4602091,27.349426 22.3473191,27.8177347 C23.0114562,28.4022491 23.6007929,29.5573331 23.6007929,31.3236588 C23.6007929,33.8546176 23.5769927,35.8963506 23.5769927,36.5168887 C23.5769927,37.0235453 23.9101946,37.6115458 24.8474666,37.4267788 C32.176775,34.9190612 37.4615385,27.8281932 37.4615385,19.4683597 C37.4615385,9.01333862 29.1949581,0.538461538 18.9994333,0.538461538 C8.80504195,0.538461538 0.538461538,9.01333862 0.538461538,19.4683597 C0.539594878,27.8305174 5.82889166,34.9260335 13.1650001,37.4291029 C14.0875387,37.6022493 14.4252739,37.017735 14.4252739,36.5168887 Z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "p-1 border-onyx border-2 fill-current rounded-full hover:bg-onyx hover:text-accent",
+    href: "https://www.linkedin.com/in/joshua-lucas-b3423517a/",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "w-10 h-10 p-1  ",
+    viewBox: "0 0 60 60"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    transform: "translate(15,15)",
+    d: "M5.88307542,26.8231512 L5.88307542,8.52433895 L0.227370038,8.52433895 L0.227370038,26.8231512 L5.88307542,26.8231512 Z M5.88307542,2.03821455 C5.84938823,0.400659962 4.75801564,-0.846153846 2.98505434,-0.846153846 C1.21163158,-0.846153846 0.0528846154,0.400659962 0.0528846154,2.03821455 C0.0528846154,3.64020234 1.17794439,4.92307692 2.9172185,4.92307692 L2.95090569,4.92307692 C4.75801564,4.92307692 5.88307542,3.64020234 5.88307542,2.03821455 Z M15.1100418,26.8231517 L15.1100418,16.3973729 C15.1100418,15.8394014 15.1503704,15.28143 15.3144472,14.8836682 C15.7630341,13.7682778 16.7839561,12.6136637 18.498199,12.6136637 C20.7438958,12.6136637 22.152278,13.8881587 22.152278,16.3973727 L22.152278,26.8231516 L27.8461538,26.8231517 L27.8461538,16.1183872 C27.8461538,10.3839878 24.7850453,7.71566901 20.7019099,7.71566901 C17.3540813,7.71566901 15.8845724,9.58735929 15.0686083,10.861302 L15.1094893,8.41391226 L9.425462,8.41391226 C9.50722415,10.1657215 9.425462,26.8231516 9.425462,26.8231516 L15.1100418,26.8231517 Z"
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Social);
 
 /***/ }),
 
@@ -66283,16 +66416,18 @@ __webpack_require__.r(__webpack_exports__);
 var Contact = function Contact() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "contact",
-    className: "flex justify-center py-10 bg-accent text-primary"
+    className: "flex justify-center px-4 py-10 bg-accent text-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center items-center w-2/3 py-12 -mt-24 bg-onyx rounded-lg shadow-xl space-x-32"
+    className: "flex flex-col items-center w-full py-12 -mt-24 bg-onyx rounded-lg shadow-xl space-y-12 md:flex-row md:justify-center md:px-6 md:space-y-0 md:w-11/12 lg:w-3/4 2xl:w-3/5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "font-semibold text-xl"
+    className: "w-3/4 text-center font-semibold text-xl md:w-1/3 "
   }, "Let's Make Something Awesome!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "w-1/3 text-center text-lg font-thin"
-  }, "Intrested in working together or want more information? Let's schedule a time."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "border-2 rounded-full p-2 hover:text-primary md:border-2 border-brand md:rounded-full md:px-6 md:text-lg hover:bg-brand md:hover:text-primary"
-  }, "Contact Me")));
+    className: "w-3/4 text-center text-lg font-thin md:w-1/3 md:px-12 "
+  }, "Intrested in working together? Want a resume? Let's schedule a time."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "md:w-1/3 text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "border-2 rounded-full p-3 px-8 hover:text-primary border-brand  md:text-lg hover:bg-brand "
+  }, "Contact Me"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
@@ -66378,7 +66513,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Works = function Works() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col items-center py-10 lg:pt-24 lg:pb-48 px-5"
+    className: "flex flex-col items-center py-10 pb-48 px-5 lg:pt-24 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "works"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -66386,7 +66521,7 @@ var Works = function Works() {
   }, "My Works")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-wrap w-full  md:px-0 lg:w-3/4 xl:w-3/5 justify-center my-12 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-secondary md:rounded-full md:px-2 md:pr-3 hover:bg-secondary md:hover:text-primary",
+    className: "flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-onyx md:rounded-full md:px-2 md:pr-3 hover:bg-onyx md:hover:text-primary",
     href: "https://github.com/Joshua-Lucas",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -66401,7 +66536,7 @@ var Works = function Works() {
     d: "M14.4252739,36.5168887 C14.4252739,36.0671729 14.4094072,34.8772272 14.4003405,33.2968305 C9.2651779,34.440294 8.18170506,30.7588994 8.18170506,30.7588994 C7.34190028,28.5719093 6.13149339,27.9897191 6.13149339,27.9897191 C4.45528384,26.8148801 6.25842744,26.8392833 6.25842744,26.8392833 C8.111438,26.9729198 9.08611021,28.7903759 9.08611021,28.7903759 C10.7328529,31.6827342 13.4064015,30.8483777 14.4592741,30.3638002 C14.6270084,29.1401549 15.1041445,28.3057984 15.6311475,27.8328415 C11.5318575,27.3552363 7.22176626,25.7306815 7.22176626,18.4771257 C7.22176626,16.4109894 7.94143703,14.7213595 9.12237709,13.3977773 C8.93310934,12.9190101 8.29843906,10.9946447 9.30371145,8.38815229 C9.30371145,8.38815229 10.8541203,7.8791716 14.3799404,10.3287864 C15.8521487,9.90928408 17.4320244,9.69778982 19.0028333,9.69081748 C20.5702423,9.69778982 22.1489846,9.90928408 23.624593,10.3287864 C27.1481464,7.8791716 28.6962885,8.38815229 28.6962885,8.38815229 C29.7038276,10.9934827 29.0702907,12.917848 28.8798896,13.3977773 C30.0630963,14.7213595 30.7771004,16.4109894 30.7771004,18.4771257 C30.7771004,25.7492744 26.4602091,27.349426 22.3473191,27.8177347 C23.0114562,28.4022491 23.6007929,29.5573331 23.6007929,31.3236588 C23.6007929,33.8546176 23.5769927,35.8963506 23.5769927,36.5168887 C23.5769927,37.0235453 23.9101946,37.6115458 24.8474666,37.4267788 C32.176775,34.9190612 37.4615385,27.8281932 37.4615385,19.4683597 C37.4615385,9.01333862 29.1949581,0.538461538 18.9994333,0.538461538 C8.80504195,0.538461538 0.538461538,9.01333862 0.538461538,19.4683597 C0.539594878,27.8305174 5.82889166,34.9260335 13.1650001,37.4291029 C14.0875387,37.6022493 14.4252739,37.017735 14.4252739,36.5168887 Z"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "pr-1"
-  }, " See More Porjects")));
+  }, " See More Projects")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Works);
