@@ -66113,6 +66113,8 @@ var App = function App() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -66128,19 +66130,25 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var ContactForm = function ContactForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    Name: '',
+    Email: '',
+    Resaon: '',
+    Message: ''
+  }),
       _useState2 = _slicedToArray(_useState, 2),
       FormResponse = _useState2[0],
       setFormResponse = _useState2[1];
 
   var handleEventChange = function handleEventChange(e) {
-    e.prevetnDefault();
-    setFormResponse(e.target.value);
+    e.preventDefault();
+    var name = e.target.name;
+    var value = e.target.value;
+    setFormResponse(_defineProperty({}, name, value));
   };
 
   var handleOnSubmit = function handleOnSubmit(e) {
     e.preventDefault();
-    setFormResponse(FormResponse);
     console.log(FormResponse);
   };
 
@@ -66150,23 +66158,26 @@ var ContactForm = function ContactForm() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     name: "Name",
-    value: FormResponse.name,
+    value: FormResponse.Name.value,
     onChange: handleEventChange,
     placeholder: "Name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     name: "Email",
     value: FormResponse.Email,
+    onChange: handleEventChange,
     placeholder: "Email"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     name: "Reason",
     value: FormResponse.Reason,
+    onChange: handleEventChange,
     placeholder: "Reason for Contacting"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
     type: "text",
     name: "Message",
     value: FormResponse.Message,
+    onChange: handleEventChange,
     placeholder: "Message"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit"
