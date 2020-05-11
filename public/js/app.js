@@ -66024,6 +66024,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./Index */ "./resources/js/Index.js");
 
+__webpack_require__(/*! ./components/contactPage */ "./resources/js/components/contactPage.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -66097,6 +66099,108 @@ var App = function App() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./resources/js/components/Contact/ContactForm.js":
+/*!********************************************************!*\
+  !*** ./resources/js/components/Contact/ContactForm.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var ContactForm = function ContactForm() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      FormResponse = _useState2[0],
+      setFormResponse = _useState2[1];
+
+  var handleEventChange = function handleEventChange(e) {
+    e.prevetnDefault();
+    setFormResponse(e.target.value);
+  };
+
+  var handleOnSubmit = function handleOnSubmit(e) {
+    e.preventDefault();
+    setFormResponse(FormResponse);
+    console.log(FormResponse);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Test"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "flex flex-col space-y-5",
+    onSubmit: handleOnSubmit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    name: "Name",
+    value: FormResponse.name,
+    onChange: handleEventChange,
+    placeholder: "Name"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    name: "Email",
+    value: FormResponse.Email,
+    placeholder: "Email"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    name: "Reason",
+    value: FormResponse.Reason,
+    placeholder: "Reason for Contacting"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    type: "text",
+    name: "Message",
+    value: FormResponse.Message,
+    placeholder: "Message"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit"
+  }, "Send")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
+
+/***/ }),
+
+/***/ "./resources/js/components/Contact/ContactPage.js":
+/*!********************************************************!*\
+  !*** ./resources/js/components/Contact/ContactPage.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ContactForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactForm */ "./resources/js/components/Contact/ContactForm.js");
+/* harmony import */ var _Header_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Header/Nav */ "./resources/js/components/Header/Nav.js");
+
+
+
+
+var ContactPage = function ContactPage() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: ""
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContactForm__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactPage);
 
 /***/ }),
 
@@ -66415,7 +66519,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var Contact = function Contact() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "contact",
     className: "flex justify-center px-4 py-10 bg-accent text-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col items-center w-full py-12 -mt-24 bg-onyx rounded-lg shadow-xl space-y-12 md:flex-row md:justify-center md:px-6 md:space-y-0 md:w-11/12 lg:w-3/4 2xl:w-3/5"
@@ -66426,7 +66529,8 @@ var Contact = function Contact() {
   }, "Intrested in working together? Want a resume? Let's schedule a time."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "md:w-1/3 text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "border-2 rounded-full p-3 px-8 hover:text-primary border-brand  md:text-lg hover:bg-brand "
+    className: "border-2 rounded-full p-3 px-8 hover:text-primary border-brand  md:text-lg hover:bg-brand ",
+    href: "/contact"
   }, "Contact Me"))));
 };
 
@@ -66612,15 +66716,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var ProjectContainer = function ProjectContainer() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
-      Loading = _useState2[0],
-      setLoading = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState4 = _slicedToArray(_useState3, 2),
-      Projects = _useState4[0],
-      setProjects = _useState4[1]; // Fetches data from Projects Table
+      Projects = _useState2[0],
+      setProjects = _useState2[1]; // Fetches data from Projects Table
 
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
@@ -66628,10 +66727,8 @@ var ProjectContainer = function ProjectContainer() {
       return resp.json();
     }).then(function (projects) {
       return setProjects(projects);
-    }).then(function (load) {
-      return setLoading(false);
     });
-  }, [Loading]);
+  }, []);
   var work = Projects.map(function (project) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: project.id,
@@ -66757,6 +66854,30 @@ var SkillsContainer = function SkillsContainer(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SkillsContainer);
+
+/***/ }),
+
+/***/ "./resources/js/components/contactPage.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/contactPage.js ***!
+  \************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Contact_ContactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Contact/ContactPage */ "./resources/js/components/Contact/ContactPage.js");
+
+
+
+
+if (document.getElementById('contactPage')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Contact_ContactPage__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('contactPage'));
+}
 
 /***/ }),
 

@@ -13,3 +13,4 @@ require('./bootstrap');
  */
 
 require('./Index');
+require('./components/contactPage');
