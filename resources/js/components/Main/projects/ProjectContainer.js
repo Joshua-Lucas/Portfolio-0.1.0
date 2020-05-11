@@ -5,7 +5,6 @@ import Project from './Project';
 
 const ProjectContainer = () => 
 {
-    const [Loading, setLoading] = useState(true);
     const [Projects, setProjects] = useState([]); 
 
     // Fetches data from Projects Table
@@ -13,8 +12,7 @@ const ProjectContainer = () =>
         fetch('/api/projects')
         .then(resp =>  resp.json())
         .then(projects => setProjects(projects))
-        .then(load => setLoading(false))
-    }, [Loading]);
+    }, []);
 
 
      const work = Projects.map((project) =>
