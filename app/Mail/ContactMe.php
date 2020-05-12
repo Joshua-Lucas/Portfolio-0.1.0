@@ -11,14 +11,17 @@ class ContactMe extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $response;
+
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($response)
     {
-        //
+        $this->response = $response;
     }
 
     /**
@@ -28,6 +31,9 @@ class ContactMe extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+
+
+        return $this->view('Email')
+            ->subject('Connection from your Portfolio');
     }
 }
