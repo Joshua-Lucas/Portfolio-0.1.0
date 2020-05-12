@@ -66113,8 +66113,6 @@ var App = function App() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -66127,29 +66125,48 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 var ContactForm = function ContactForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    Name: '',
-    Email: '',
-    Resaon: '',
-    Message: ''
-  }),
-      _useState2 = _slicedToArray(_useState, 2),
-      FormResponse = _useState2[0],
-      setFormResponse = _useState2[1];
-
-  var handleEventChange = function handleEventChange(e) {
-    e.preventDefault();
-    var name = e.target.name;
-    var value = e.target.value;
-    setFormResponse(_defineProperty({}, name, value));
+  var initialState = {
+    name: '',
+    email: '',
+    reason: '',
+    message: ''
   };
+
+  var reducer = function reducer(state, _ref) {
+    var field = _ref.field,
+        value = _ref.value;
+    return _objectSpread({}, state, _defineProperty({}, field, value));
+  };
+
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState),
+      _useReducer2 = _slicedToArray(_useReducer, 2),
+      state = _useReducer2[0],
+      dispatch = _useReducer2[1];
+
+  var handleChange = function handleChange(e) {
+    dispatch({
+      field: e.target.name,
+      value: e.target.value
+    });
+  };
+
+  var name = state.name,
+      email = state.email,
+      reason = state.reason,
+      message = state.message;
 
   var handleOnSubmit = function handleOnSubmit(e) {
     e.preventDefault();
-    console.log(FormResponse);
+    console.log(state);
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Test"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
@@ -66157,28 +66174,28 @@ var ContactForm = function ContactForm() {
     onSubmit: handleOnSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
-    name: "Name",
-    value: FormResponse.Name.value,
-    onChange: handleEventChange,
-    placeholder: "Name"
+    name: "name",
+    value: name,
+    onChange: handleChange,
+    placeholder: "Enter Name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
-    name: "Email",
-    value: FormResponse.Email,
-    onChange: handleEventChange,
-    placeholder: "Email"
+    name: "email",
+    value: email,
+    onChange: handleChange,
+    placeholder: "Enter Email"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
-    name: "Reason",
-    value: FormResponse.Reason,
-    onChange: handleEventChange,
-    placeholder: "Reason for Contacting"
+    name: "reason",
+    value: reason,
+    onChange: handleChange,
+    placeholder: "Select Reason for Contacting"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
     type: "text",
-    name: "Message",
-    value: FormResponse.Message,
-    onChange: handleEventChange,
-    placeholder: "Message"
+    name: "message",
+    value: message,
+    onChange: handleChange,
+    placeholder: "Enter Message"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit"
   }, "Send")));
