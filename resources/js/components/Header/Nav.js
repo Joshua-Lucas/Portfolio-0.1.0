@@ -10,7 +10,7 @@ const Nav = () =>
                 <div className="md:self-center md:pl-2 ">
                     <a href="/">
                         <svg className="w-24 h-24 fill-current text-secondary md:w-32 md:h-32 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200">
-                            <path id="Selection"  stroke-width="1"
+                            <path id="Selection"  strokeWidth="1"
                                     d="M 921.00,838.09
                                     C 921.00,838.09 910.00,838.09 910.00,838.09
                                         910.00,838.09 902.00,839.40 902.00,839.40
