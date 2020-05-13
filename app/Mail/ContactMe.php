@@ -11,6 +11,9 @@ class ContactMe extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $name;
+    public $email;
+    public $reason;
     public $response;
 
 
@@ -19,8 +22,11 @@ class ContactMe extends Mailable
      *
      * @return void
      */
-    public function __construct($response)
+    public function __construct($name, $email, $reason, $response)
     {
+        $this->name = $name;
+        $this->email = $email;
+        $this->reason = $reason;
         $this->response = $response;
     }
 
@@ -34,6 +40,7 @@ class ContactMe extends Mailable
 
 
         return $this->view('Email')
+            ->cc('joshuamlucas91@gmail.com')
             ->subject('Connection from your Portfolio');
     }
 }

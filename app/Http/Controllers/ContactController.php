@@ -20,11 +20,8 @@ class ContactController extends Controller
 
     public function store()
     {
-        $response = request()->all();
 
-        return $response;
-
-        // Mail::to($email)
-        //     ->send(new ContactMe(request('Name'), request('Name'), request('Name'), request('Name')));
+        Mail::to('joshualucasportfolio@gmail.com')
+            ->send(new ContactMe(request('name'), request('email'), request('reason'), request('response')));
     }
 }

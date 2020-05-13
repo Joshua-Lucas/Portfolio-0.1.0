@@ -17,14 +17,13 @@
 <body class="font-main bg-primary text-onyx">
     <div>
 
-        <h1>Response from portfolio it worked </h1>
+        <h1>Response form your Portfolio</h1>
 
         <ul>
-
             <li>Name: {{ $name }}</li>
-            <li>Email: {{ $email }}</li>
-            <li>Resaon: {{ $response }}</li>
-            <li>Message: {{ $message }}</li>
+            <li> Email: {{$email}} </li>
+            <li> Reason: {{$reason}} </li>
+            <li> Message: {{$response}} </li>
         </ul>
 
     </div>
