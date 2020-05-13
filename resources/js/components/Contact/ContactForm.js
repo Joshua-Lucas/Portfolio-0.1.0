@@ -7,7 +7,7 @@ const ContactForm = () =>
             name: "", 
             email: "",
             reason:"", 
-            message: ""
+            response: ""
     };
 
    const  reducer = (state, {field, value}) =>  {
@@ -24,7 +24,7 @@ const ContactForm = () =>
         dispatch({field :e.target.name, value: e.target.value})
    }
 
-   const {name, email, reason, message} = state
+   const {name, email, reason, response} = state
 
     const handleOnSubmit = (e) =>
     {
@@ -41,15 +41,20 @@ const ContactForm = () =>
 
     return (
         
-            <div>
-                <h1>Test</h1>
-                <form className="flex flex-col space-y-5" onSubmit={handleOnSubmit}>
-                    <input type='text' name="name" value={name} onChange={handleChange} placeholder='Enter Name'/>
-                    <input type='email' name="email"  value={email} onChange={handleChange} placeholder='Enter Email' />
-                    <input type='text' name="reason" value={reason} onChange={handleChange} placeholder='Select Reason for Contacting'/>
-                    <textarea type="text" name="message" value={message} onChange={handleChange} placeholder='Enter Message'/>
+            <div className=" flex flex-col items-center w-1/2 mx-auto my-12">
+                <h1>Thanks for reaching out!</h1>
+                <form className="flex  flex-wrap justify-center  " onSubmit={handleOnSubmit}>
+                    <input className="w-1/3 m-2 bg-transparent rounded-md border-b-2 placeholder-onyx "type='text' name="name" value={name} onChange={handleChange} placeholder='Enter Name'/>
+                    <input className="w-1/3 m-2 bg-transparent rounded-md border-b-2 placeholder-onyx "type='email' name="email"  value={email} onChange={handleChange} placeholder='Enter Email' />
+                    <select className="w-4/5 m-2 bg-transparent rounded-md border-b-2 placeholder-onyx "type='text' name="reason" value={reason} onChange={handleChange} placeholder='Select Reason for Contacting'>
+                        <option>Request Resume</option>
+                        <option>Leave Review</option>
+                        <option>Start Project Together</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea className="w-full m-2 bg-transparent rounded-md border-2 placeholder-onyx "type="text" name="response" value={response} onChange={handleChange} placeholder='Enter Message'/>
 
-                    <button type="submit">Send</button>
+                    <button className="w-1/3 m-2 rounded-lg border-2 border-secondary hover:bg-accent hover:text-primary"type="submit">Send</button>
                 </form>
             </div>
 

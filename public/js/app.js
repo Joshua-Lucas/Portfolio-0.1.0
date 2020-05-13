@@ -66138,7 +66138,7 @@ var ContactForm = function ContactForm() {
     name: "",
     email: "",
     reason: "",
-    message: ""
+    response: ""
   };
 
   var reducer = function reducer(state, _ref) {
@@ -66162,7 +66162,7 @@ var ContactForm = function ContactForm() {
   var name = state.name,
       email = state.email,
       reason = state.reason,
-      message = state.message;
+      response = state.response;
 
   var handleOnSubmit = function handleOnSubmit(e) {
     e.preventDefault();
@@ -66176,34 +66176,41 @@ var ContactForm = function ContactForm() {
     });
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Test"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "flex flex-col space-y-5",
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " flex flex-col items-center w-1/2 mx-auto my-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Thanks for reaching out!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "flex  flex-wrap justify-center  ",
     onSubmit: handleOnSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "w-1/3 m-2 bg-transparent rounded-md border-b-2 placeholder-onyx ",
     type: "text",
     name: "name",
     value: name,
     onChange: handleChange,
     placeholder: "Enter Name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "w-1/3 m-2 bg-transparent rounded-md border-b-2 placeholder-onyx ",
     type: "email",
     name: "email",
     value: email,
     onChange: handleChange,
     placeholder: "Enter Email"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+    className: "w-4/5 m-2 bg-transparent rounded-md border-b-2 placeholder-onyx ",
     type: "text",
     name: "reason",
     value: reason,
     onChange: handleChange,
     placeholder: "Select Reason for Contacting"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Request Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Leave Review"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Start Project Together"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Other")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    className: "w-full m-2 bg-transparent rounded-md border-2 placeholder-onyx ",
     type: "text",
-    name: "message",
-    value: message,
+    name: "response",
+    value: response,
     onChange: handleChange,
     placeholder: "Enter Message"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "w-1/3 m-2 rounded-lg border-2 border-secondary hover:bg-accent hover:text-primary",
     type: "submit"
   }, "Send")));
 };
@@ -66499,7 +66506,7 @@ var Nav = function Nav() {
     href: "#works"
   }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "w-3/4 py-2 text-center hover:text-secondary md:border-2 md:border-secondary md:rounded-full md:px-2 md:hover:bg-secondary md:hover:text-primary",
-    href: "#contact"
+    href: "/contact"
   }, "Contact")));
 };
 
