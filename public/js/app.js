@@ -66167,14 +66167,12 @@ var ContactForm = function ContactForm() {
   var handleOnSubmit = function handleOnSubmit(e) {
     e.preventDefault();
     console.log(JSON.stringify(state));
-    fetch('api/contact', {
-      method: "POST",
+    fetch('/api/contact', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(state)
-    }).then(function (resp) {
-      return resp.json();
     });
   };
 
