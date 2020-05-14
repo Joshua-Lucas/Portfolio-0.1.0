@@ -5,6 +5,12 @@ module.exports = {
         '2xl' : {'min': '1680px'},
       },
 
+      margin: {
+        '-26': '-6.5rem',
+        '-28': '-7rem',
+        '-30': '-7.5rem'
+      },
+
       padding: {
         '0.5': '0.125rem',
         '0.25': '.0625rem'
