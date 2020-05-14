@@ -1,12 +1,12 @@
 import React from 'react';
 import ContactForm from './ContactForm';
-import Nav from '../Header/Nav';
+import ContactHeader from './ContactHeader';
 
 
 const ContactPage = () =>  {
     return (
         <div className="">
-            <Nav />
+            <ContactHeader />
             <ContactForm />
         </div>
     );
