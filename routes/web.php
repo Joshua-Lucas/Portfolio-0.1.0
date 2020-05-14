@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::GET('/contact', 'ContactController@index');
+Route::view('/{path?}', 'welcome');
+// Route::GET('/contact', 'ContactController@index');

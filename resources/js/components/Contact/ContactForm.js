@@ -1,4 +1,5 @@
 import React, { useReducer } from "react";
+import { Redirect } from "react-router-dom";
 
 
 const ContactForm = () =>
@@ -29,12 +30,13 @@ const ContactForm = () =>
     const handleOnSubmit = (e) =>
     {
         e.preventDefault();
-        console.log(JSON.stringify(state));
         fetch('/api/contact' , {
             method: 'POST',
+            redirect:'follow',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(state)
         })
+
  
         
     }
@@ -42,6 +44,7 @@ const ContactForm = () =>
     return (
         
             <div className=" flex flex-col items-center w-5/6 mx-auto my-12 fade-in-up">
+
                     <a href="/" className="-mt-24 pb-12 md:-mt-28 xl:-mt-28">
                         <svg className="w-24 h-24 fill-current text-secondary md:w-32 md:h-32 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200">
                             <path id="Selection"  strokeWidth="1"
@@ -168,7 +171,9 @@ const ContactForm = () =>
                                         722.45,599.62 732.94,604.52 747.00,602.00 Z" />
                         </svg>
                     </a>
+
                 <h1 className="capitalize text-2xl lg:text-5xl">Thanks for reaching out!</h1>
+
                 <form className="flex flex-wrap justify-start pt-8 md:grid md:grid-cols-2 md:row-gap-4 md:w-11/12 lg:w-3/4 xl:w-4/6  2xl:w-1/2" onSubmit={handleOnSubmit}>
                     <label className="w-full pt-2 p-4 md:pt-4">Name
                         <input className=" w-full pt-2 bg-transparent rounded border-b-2 placeholder-onyx focus:outline-none focus:border-accent"type='text' name="name" value={name} onChange={handleChange} placeholder='Enter Name' required/>
@@ -190,6 +195,7 @@ const ContactForm = () =>
                     </label>
                     <button className="w-11/12 mx-auto p-4 mt-4 rounded-full border-2 border-secondary hover:bg-accent hover:border-accent hover:text-primary md:col-span-2 lg:w-1/5" type="submit">Send</button>
                 </form>
+
             </div>
 
     );
