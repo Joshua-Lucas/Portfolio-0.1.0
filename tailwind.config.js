@@ -26,6 +26,13 @@ module.exports = {
 
       },
 
+      height:
+      {
+          '1/2': '50%',
+          '3/5': '60%',
+          '3/4': '75%'
+      },
+
       fontFamily:
       {
         main: [ 'Josefin Sans', 'sans-serif'],

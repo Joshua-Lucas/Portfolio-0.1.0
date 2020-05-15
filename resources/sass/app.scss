@@ -6,14 +6,46 @@
     100% {opacity: 1}
 }
 
+@keyframes fade-out{
+    0% {opacity: 1;}
+    100% {opacity: 0}
+}
+
+
 @keyframes trans-up {
-    0% {transform: translateY(10%)}
+    0% {transform: translateY(20%)}
     100% {transform: translateY(0)}
 }
+
+@keyframes trans-in {
+    0% {transform: translateX(-0%)}
+    100% {transform: translateX(0)}
+}
+
 .fade-in-up{
    animation: fade-in 2s , trans-up 1s;
 }
 
+.fade-in-up-3{
+    animation: fade-in 3s , trans-up 2s;
+ }
+
+.fade-out-right{
+    animation: fade-out 2, trans-out 1s;
+}
+// fade ins
+.fade-in {
+    animation: fade-in 2s;
+}
+
+.fade-in-5{
+    animation: fade-in 5s;
+}
+//fade outs
+.fade-out{
+    animation: fade-out 2s;
+
+}
 
 
 
