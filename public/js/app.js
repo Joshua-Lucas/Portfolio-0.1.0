@@ -69961,17 +69961,6 @@ module.exports = "/images/tailwind-css-seeklogo.com.svg?bdf9bc2b513dbc3ccc57c847
 
 /***/ }),
 
-/***/ "./resources/img/profilePlaceholder.svg":
-/*!**********************************************!*\
-  !*** ./resources/img/profilePlaceholder.svg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/profilePlaceholder.svg?e069c8cb17eaaa67673ba22c8bfdb1b7";
-
-/***/ }),
-
 /***/ "./resources/img/setup3.svg":
 /*!**********************************!*\
   !*** ./resources/img/setup3.svg ***!
@@ -70495,11 +70484,8 @@ var Social = function Social() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/profilePlaceholder.svg */ "./resources/img/profilePlaceholder.svg");
-/* harmony import */ var _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/setup3.svg */ "./resources/img/setup3.svg");
-/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_setup3_svg__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/setup3.svg */ "./resources/img/setup3.svg");
+/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_setup3_svg__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -70517,14 +70503,14 @@ var Banner = function Banner() {
   }, " Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-4 self-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: " w-56 h-56 pb-2 lg:w-64 lg:h-64",
-    src: _img_profilePlaceholder_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    className: " w-56 h-56  lg:w-64 lg:h-64 rounded-full border-2 border-secondary",
+    src: "https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg",
     alt: "Pic of me"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex justify-center lg:m-8 lg:mb-0 w-full h-full "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 ",
-    src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
     alt: "my setup"
   })));
 };
