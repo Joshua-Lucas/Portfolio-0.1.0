@@ -4,7 +4,7 @@ import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
 import ContactPage from './Contact/ContactPage';
-import ContactThankYou from './Contact/ContactThankyou';
+
 
 const App = () =>  {
     return (
@@ -19,7 +19,6 @@ const App = () =>  {
                     <Route exact path="/contact">
                         <ContactPage/>
                     </Route>
-                    <Route  exact path="/thankyou" component={ContactThankYou} />
                 </Switch>
             </div>
         </BrowserRouter>
