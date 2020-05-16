@@ -9,7 +9,7 @@ import Team from '../../../../img/Skills/team.svg';
 
 
 
-const Skill = ({img,title,description,section1,language,section2,tools,key}) => 
+const Skill = ({img,title,description,section1,language,section2,tools}) => 
 {
 
     return (

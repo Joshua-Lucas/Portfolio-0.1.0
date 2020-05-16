@@ -5,6 +5,7 @@ import Skill from './Skill';
 
 const SkillsContainer = ({data}) => 
 {
+    
     const Skills = data.map(skill =>
     {
         return <Skill 
@@ -15,7 +16,11 @@ const SkillsContainer = ({data}) =>
                 section1={skill.section1} 
                 language={skill.language.join(', ')}
                 section2={skill.section2}
-                tools={skill.tools.map(tool => {return <li>{tool}</li>})}
+                tools={skill.tools.map(tool => 
+                     <li key={tool}>
+                         {tool}
+                    </li> 
+                )}
                 />
     });
 

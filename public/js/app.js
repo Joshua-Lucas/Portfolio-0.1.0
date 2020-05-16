@@ -69854,7 +69854,7 @@ __webpack_require__.r(__webpack_exports__);
 var Backend = [{
   img_src: 1,
   title: 'backend',
-  description: 'I strive to write clean and reusable code, to  create a scalable fondation to service client request. ',
+  description: 'I strive to write clean and reusable code to create a scalable foundation to service the client\'s request.',
   section1: 'Languages I Know:',
   language: ['PHP', 'C#', 'SQL'],
   section2: 'Frameworks/Practices',
@@ -69864,21 +69864,21 @@ var Backend = [{
 var Frontend = [{
   img_src: 2,
   title: 'frontend',
-  description: 'I enjoy creating intuative and responsive designs that lend to a great user experience. ',
+  description: 'I enjoy creating intuitive and responsive designs that offer a great user experience.',
   section1: 'Languages I Know:',
   language: ['HTML', 'CSS', 'JavaScript'],
   section2: 'Frameworks/Practices',
-  tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA', 'Functional Programing'],
+  tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA'],
   id: 2
 }];
 var softSkills = [{
   img_src: 3,
   title: 'Essential Skills',
-  description: ' I truly enjoy working with people and desire to learn from them and help them grow.',
-  section1: 'Oppertunites I draw from',
+  description: 'I enjoy working with people, learning from them, and watching them develop in their skills.',
+  section1: 'Opportunites I Draw From:',
   language: ['Customer Service', 'Managment'],
-  section2: 'Skills',
-  tools: ['Teachable', 'Team Player', 'Disciplined', 'Self-Motivated', 'Servant-Minded', 'Friendly', 'Buisness Minded'],
+  section2: 'Qualities',
+  tools: ['Teachable', 'Team Player', 'Disciplined', 'Self-Motivated', 'Service-Minded', 'Friendly', 'Buisness Minded'],
   id: 3
 }];
 
@@ -70208,7 +70208,7 @@ var ContactForm = function ContactForm() {
   }, "Thanks for reaching out!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "flex flex-wrap justify-start pt-8 md:grid md:grid-cols-2 md:row-gap-4 md:w-11/12 lg:w-3/4 xl:w-4/6  2xl:w-1/2",
     onSubmit: handleSubmit
-  }, "                ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "w-full pt-2 p-4 md:pt-4"
   }, "Name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     className: " w-full pt-2 bg-transparent rounded border-b-2 placeholder-onyx focus:outline-none focus:border-accent",
@@ -70230,7 +70230,7 @@ var ContactForm = function ContactForm() {
     required: true
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "w-full p-4 md:col-span-2"
-  }, "Reson For Connecting", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, "Reason For Connecting", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     className: "w-full pt-2 bg-transparent rounded border-b-2 placeholder-onyx focus:outline-none focus:border-accent",
     type: "text",
     name: "reason",
@@ -70238,7 +70238,7 @@ var ContactForm = function ContactForm() {
     onChange: handleChange,
     placeholder: "Select Reason for Contacting",
     required: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "-- Please chose an option --"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Request Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Write Testimonial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Start Project Together"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Other"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "-- Please choose an option --"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Request Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Write Testimonial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Start Project Together"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Other"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "w-full p-4 md:col-span-2"
   }, "Message", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
     className: "w-full pb-8 pt-2 px-2 bg-transparent rounded border-2 placeholder-onyx resize-none lg:pb-20 focus:outline-none focus:border-accent",
@@ -70354,7 +70354,7 @@ var FlashThankYou = function FlashThankYou() {
   }, "I will get back with you soon."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "w-11/12 mx-auto text-center p-2 mt-12 rounded-full border-2 border-secondary hover:bg-accent hover:border-accent hover:text-primary lg:w-3/5",
     to: "/"
-  }, " Back to Portfolio")));
+  }, "Back to Portfolio")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FlashThankYou);
@@ -70408,7 +70408,7 @@ var Footer = function Footer() {
     className: "text-base"
   }, "Developed by me \xA9 ", getCurrentYear(), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-xs"
-  }, "Design inspired from Matt Farley's portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Design inspired by Matt Farley's portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "pt-10 text-sm"
   }, "Styled using", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "pl-2 font-semibold",
@@ -70416,8 +70416,9 @@ var Footer = function Footer() {
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "inline w-4 h-4",
-    src: _img_icons_tailwind_css_seeklogo_com_svg__WEBPACK_IMPORTED_MODULE_1___default.a
-  }), " Tailwind CSS"))));
+    src: _img_icons_tailwind_css_seeklogo_com_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    alt: "Taillwind css Logo"
+  }), "Tailwind CSS"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -70496,14 +70497,14 @@ var Banner = function Banner() {
     className: " flex flex-col pb-12 items-start sm:items-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "leading-normal text-xl sm:text-center lg:text-4xl"
-  }, "A Louisville based ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "text-accent font-accent leading-none inline-block pt-1 text-6xl lg:inline"
-  }, "Full Stack Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, "A Louisville based", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "text-accent font-accent leading-none inline-block pt-1 text-6xl md:pl-2 lg:inline"
+  }, "FullStack Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "pt-1 text-xl"
-  }, " Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "mt-4 self-center"
+  }, "Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mt-4 self-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: " w-56 h-56  lg:w-64 lg:h-64 rounded-full border-2 border-secondary",
+    className: " w-56 h-56  lg:w-64 lg:h-64 rounded-full border-2 border-secondary shadow-lg ",
     src: "https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg",
     alt: "Pic of me"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -70601,7 +70602,7 @@ var Nav = function Nav() {
     },
     className: "hover:text-accent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "mt-2 h-6 w-6 fill-current",
+    className: "mt-2 h-8 w-8 mr-4 fill-current",
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24"
   }, isToggled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
@@ -70649,9 +70650,9 @@ var About = function About() {
     className: " font-accent text-center text-2xl font-semibold md:text-3xl lg:text-4xl "
   }, "Hi, I'm Joshua Lucas. Pleasure to meet you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-center pt-6 leading-normal text-lg font-thin md:text-xl md:px-16 "
-  }, "I am a self taught full stack developer who is passionate about developing intuitive, responsive software with the user in mind. I am driven,  hardworking, honest, and a loyal team player. I am a quick learner, perpetually seeking to sharpen my skills and grow in my knowledge of software development. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "I am a self-taught fullstack developer who is passionate about developing intuitive, responsive software with the user in mind. I am driven, hardworking, honest, and a loyal team player. I am a quick learner, perpetually seeking to sharpen my skills and grow in my knowledge of software development."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-center pt-6 leading-normal text-lg font-thin md:text-xl  md:px-16 "
-  }, "When I am not at my computer, you can find me enjoying the outdoors with my wife, trying a new restaurant, or sharing a conversation with a friend over a cup of coffee. ")));
+  }, "When I am not at my computer, you can find me enjoying the outdoors with my wife, trying a new restaurant, or conversing with a friend over a cup of coffee.")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
@@ -70677,10 +70678,10 @@ var Contact = function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col items-center w-full py-12 -mt-24 bg-onyx rounded-lg shadow-xl space-y-12 md:flex-row md:justify-center md:px-6 md:space-y-0 md:w-11/12 lg:w-3/4 2xl:w-3/5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "w-3/4 text-center font-semibold text-xl md:w-1/3 "
-  }, "Let's Make Something Awesome!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "w-3/4 text-center font-semibold text-2xl md:w-1/3 "
+  }, "Let's Work Together!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "w-3/4 text-center text-lg font-thin md:w-1/3 md:px-12 "
-  }, "Intrested in working together? Want a resume? Let's schedule a time."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Click \"contact me\" for more information."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "md:w-1/3 text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "border-2 rounded-full p-3 px-8 hover:text-primary border-brand  md:text-lg hover:bg-brand ",
@@ -70787,7 +70788,7 @@ var Works = function Works() {
     version: "1.1",
     fill: "#49494b",
     stroke: "#49494b",
-    "stroke-width": "1"
+    strokeWidth: "1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     transform: "translate(5,2.5)",
     className: "m-auto",
@@ -70938,8 +70939,7 @@ var Skill = function Skill(_ref) {
       section1 = _ref.section1,
       language = _ref.language,
       section2 = _ref.section2,
-      tools = _ref.tools,
-      key = _ref.key;
+      tools = _ref.tools;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: " flex flex-col bg-primary w-5/6 m-auto px-4 py-12 text-lg rounded-lg shadow-xl items-center  md:m-0 md:space-y-8 lg:px-12 lg:py-20 2xl:text-xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -71000,7 +71000,9 @@ var SkillsContainer = function SkillsContainer(_ref) {
       language: skill.language.join(', '),
       section2: skill.section2,
       tools: skill.tools.map(function (tool) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, tool);
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: tool
+        }, tool);
       })
     });
   });

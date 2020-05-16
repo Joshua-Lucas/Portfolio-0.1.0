@@ -17,22 +17,24 @@ const Footer = () =>
         return currentYear;
     }
 
-
-        return(
-            <div className="flex flex-col items-center justify-center pb-12 bg-accent" >
-                <div>
-                    <a href="/"><img className=" w-40 h-40"src={Logo} alt="Joshua Lucas || FullStack Developer"></img></a>
-                </div>
-                <Social />
-                <div className="flex flex-col items-center">
-                    <p className="text-base">Developed by me &copy; {getCurrentYear()} </p>
-                    <p className="text-xs">Design inspired from Matt Farley's portfolio</p>
-                    <p className="pt-10 text-sm">Styled using  
-                        <a className="pl-2 font-semibold"href="https://tailwindcss.com/" target="_blank"><img className="inline w-4 h-4"src={tailwindcsslogo}></img> Tailwind CSS</a>
-                    </p>
-                </div>
+    return(
+        <div className="flex flex-col items-center justify-center pb-12 bg-accent" >
+            <div>
+                <a href="/"><img className=" w-40 h-40"src={Logo} alt="Joshua Lucas || FullStack Developer"></img></a>
             </div>
-        );
+            <Social />
+            <div className="flex flex-col items-center">
+                <p className="text-base">Developed by me &copy; {getCurrentYear()} </p>
+                <p className="text-xs">Design inspired by Matt Farley's portfolio</p>
+                <p className="pt-10 text-sm">Styled using  
+                    <a className="pl-2 font-semibold"href="https://tailwindcss.com/" target="_blank">
+                        <img className="inline w-4 h-4"src={tailwindcsslogo} alt="Taillwind css Logo"></img>
+                        Tailwind CSS
+                    </a>
+                </p>
+            </div>
+        </div>
+    );
 
 }
 

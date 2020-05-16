@@ -16,9 +16,15 @@ const FlashThankYou = () =>
                     
                 </div>
                 <div className="flex flex-col justify-center items-center py-10  ">
-                    <h1 className="capitalize text-center pb-8 text-3xl lg:text-4xl lg:pb-2">Message sent</h1>
-                    <h2 className="capitalize text-center text-lg lg:text-xl">I will get back with you soon.</h2>
-                    <Link className="w-11/12 mx-auto text-center p-2 mt-12 rounded-full border-2 border-secondary hover:bg-accent hover:border-accent hover:text-primary lg:w-3/5" to='/'> Back to Portfolio</Link>
+                    <h1 className="capitalize text-center pb-8 text-3xl lg:text-4xl lg:pb-2">
+                        Message sent
+                    </h1>
+                    <h2 className="capitalize text-center text-lg lg:text-xl">
+                        I will get back with you soon.
+                    </h2>
+                    <Link className="w-11/12 mx-auto text-center p-2 mt-12 rounded-full border-2 border-secondary hover:bg-accent hover:border-accent hover:text-primary lg:w-3/5" to='/'> 
+                        Back to Portfolio
+                    </Link>
                 </div>
             </div>
         );

@@ -177,17 +177,20 @@ const ContactForm = () =>
 
                 <div className={!flashToggle ? "flex flex-col items-center w-full" : "hidden"}>
 
-                <h1 className="capitalize text-2xl lg:text-5xl">Thanks for reaching out!</h1>
+                <h1 className="capitalize text-2xl lg:text-5xl">
+                    Thanks for reaching out!
+                </h1>
 
-                <form className="flex flex-wrap justify-start pt-8 md:grid md:grid-cols-2 md:row-gap-4 md:w-11/12 lg:w-3/4 xl:w-4/6  2xl:w-1/2" onSubmit={handleSubmit}>                <label className="w-full pt-2 p-4 md:pt-4">Name
+                <form className="flex flex-wrap justify-start pt-8 md:grid md:grid-cols-2 md:row-gap-4 md:w-11/12 lg:w-3/4 xl:w-4/6  2xl:w-1/2" onSubmit={handleSubmit}>             
+                   <label className="w-full pt-2 p-4 md:pt-4">Name
                         <input className=" w-full pt-2 bg-transparent rounded border-b-2 placeholder-onyx focus:outline-none focus:border-accent"type='text' name="name" value={name} onChange={handleChange} placeholder='Enter Name' required/>
                     </label>
                     <label  className="w-full p-4">Email
                         <input className="w-full pt-2 bg-transparent rounded border-b-2 placeholder-onyx focus:outline-none focus:border-accent  "type='email' name="email"  value={email} onChange={handleChange} placeholder='Enter Email' required />
                     </label>    
-                    <label  className="w-full p-4 md:col-span-2">Reson For Connecting
+                    <label  className="w-full p-4 md:col-span-2">Reason For Connecting
                         <select className="w-full pt-2 bg-transparent rounded border-b-2 placeholder-onyx focus:outline-none focus:border-accent"type='text' name="reason" value={reason} onChange={handleChange} placeholder='Select Reason for Contacting' required>
-                            <option>-- Please chose an option --</option>
+                            <option>-- Please choose an option --</option>
                             <option>Request Resume</option>
                             <option>Write Testimonial</option>
                             <option>Start Project Together</option>
