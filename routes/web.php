@@ -19,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/{path?}', 'welcome');
 // Route::GET('/contact', 'ContactController@index');
+
+Route::GET('/.well-known/acme-challenge/qQepKYG5ERyVcEtM94Aou_C_35OJKaMtJRcg9xx9yxQ', function () {
+    return 'qQepKYG5ERyVcEtM94Aou_C_35OJKaMtJRcg9xx9yxQ.qv8W6hjsOVMv_RGdDzunBAFUyHgOah11FslvSDXdIj0';
+});
