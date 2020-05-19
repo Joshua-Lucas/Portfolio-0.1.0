@@ -17,8 +17,8 @@ const Banner = () =>
                    <img className=" w-56 h-56  lg:w-64 lg:h-64 rounded-full border-2 border-secondary shadow-lg " src="https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg" alt="Pic of me"></img>
                 </div>
             </div>
-            <div className="flex justify-center lg:m-8 lg:mb-0 w-full h-full ">
-                <img className=" w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 "src={setup} alt="my setup"></img>
+            <div className=" pb-2/4 w-11/12 relative flex justify-center sm:w-5/6 md:w-4/6 md:pb-1/3 lg:pb-1/3 lg:w-7/12 lg:mb-0 xl:pb-1/4 2xl:w-5/12 ">
+                <img className=" absolute bottom-0 w-full h-auto  md:pb-0.25 lg:pb-0 xl:pb-0.75 2xl:pb-0.75"src={setup} alt="my setup"></img>
             </div>
         </div>
 

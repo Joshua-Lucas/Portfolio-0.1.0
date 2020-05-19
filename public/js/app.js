@@ -69968,7 +69968,7 @@ module.exports = "/images/tailwind-css-seeklogo.com.svg?bdf9bc2b513dbc3ccc57c847
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/setup3.svg?25a625b022307c82820e05b4b2c5bd52";
+module.exports = "/images/setup3.svg?1411a96c45a5e459e625086c6820afa6";
 
 /***/ }),
 
@@ -70508,9 +70508,9 @@ var Banner = function Banner() {
     src: "https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg",
     alt: "Pic of me"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center lg:m-8 lg:mb-0 w-full h-full "
+    className: " pb-2/4 w-11/12 relative flex justify-center sm:w-5/6 md:w-4/6 md:pb-1/3 lg:pb-1/3 lg:w-7/12 lg:mb-0 xl:pb-1/4 2xl:w-5/12 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: " w-11/12 h-auto sm:w-5/6 md:w-9/12 lg:w-5/12 xl:pb-1 2xl:pb-0.5 ",
+    className: " absolute bottom-0 w-full h-auto  md:pb-0.25 lg:pb-0 xl:pb-0.75 2xl:pb-0.75",
     src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
     alt: "my setup"
   })));
