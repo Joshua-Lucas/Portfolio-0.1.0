@@ -27,7 +27,7 @@ const Footer = () =>
                 <p className="text-base">Developed by me &copy; {getCurrentYear()} </p>
                 <p className="text-xs">Design inspired by Matt Farley's portfolio</p>
                 <p className="pt-10 text-sm">Styled using  
-                    <a className="pl-2 font-semibold"href="https://tailwindcss.com/" target="_blank">
+                    <a className="pl-2 font-semibold"href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
                         <img className="inline w-4 h-4"src={tailwindcsslogo} alt="Taillwind css Logo"></img>
                         Tailwind CSS
                     </a>

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="Portfolio" content="portfolio, about, works, contact">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Joshua Lucas</title>

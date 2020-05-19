@@ -70413,6 +70413,7 @@ var Footer = function Footer() {
   }, "Styled using", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "pl-2 font-semibold",
     href: "https://tailwindcss.com/",
+    rel: "noreferrer",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "inline w-4 h-4",
@@ -70450,6 +70451,7 @@ var Social = function Social() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "p-1 border-onyx border-2 fill-current rounded-full hover:bg-onyx hover:text-accent",
     href: "https://github.com/Joshua-Lucas",
+    rel: "noreferrer",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     className: "w-10 h-10 p-1  ",
@@ -70460,6 +70462,7 @@ var Social = function Social() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "p-1 border-onyx border-2 fill-current rounded-full hover:bg-onyx hover:text-accent",
     href: "https://www.linkedin.com/in/joshua-lucas-b3423517a/",
+    rel: "noreferrer",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     className: "w-10 h-10 p-1  ",
@@ -70782,6 +70785,7 @@ var Works = function Works() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_ProjectContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "flex justify-around items-center border-2 rounded-full p-2 hover:text-primary md:border-2 border-onyx md:rounded-full md:px-2 md:pr-3 hover:bg-onyx md:hover:text-primary",
     href: "https://github.com/Joshua-Lucas",
+    rel: "noreferrer",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     className: "w-12 h-12 text-center fill-current hover:text-primary",
@@ -70835,6 +70839,7 @@ var Project = function Project(_ref) {
   }, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "text-center lg:w-3/5 self-center border-2 border-brand rounded-full  py-2 px-2 hover:bg-brand hover:text-primary",
     href: link,
+    rel: "noreferrer",
     target: "_blank"
   }, "Visit Website"))));
 };
