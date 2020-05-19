@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name=Email content="emailed response of contact form">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Joshua Lucas</title>
