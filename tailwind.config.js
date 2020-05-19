@@ -1,8 +1,8 @@
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.js',
-    './src/**/*.jsx',
+    './resources/**/*.blade.php',
+    './resources/**/*.js',
+    './resources/**/*.jsx',
   ],
   theme: {
     extend: {
