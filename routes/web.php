@@ -20,6 +20,6 @@ use Illuminate\Support\Facades\Route;
 Route::view('/{path?}', 'welcome');
 // Route::GET('/contact', 'ContactController@index');
 
-Route::GET('/.well-known/acme-challenge/sZ6Iv5a_kyQA7qhSdddXdYxzqjxlaqz26ikf7AiAXfE', function () {
-    return dd('sZ6Iv5a_kyQA7qhSdddXdYxzqjxlaqz26ikf7AiAXfE.qv8W6hjsOVMv_RGdDzunBAFUyHgOah11FslvSDXdIj0');
+Route::GET('/.well-known/acme-challenge/gftVe5P0mnpLQThcAXcfkon2SxSCblADMQhJnA-ndS4', function () {
+    return dd('gftVe5P0mnpLQThcAXcfkon2SxSCblADMQhJnA-ndS4.qv8W6hjsOVMv_RGdDzunBAFUyHgOah11FslvSDXdIj0');
 });
