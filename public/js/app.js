@@ -70508,7 +70508,7 @@ var Banner = function Banner() {
     src: "https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg",
     alt: "Pic of me"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " pb-2/4 w-11/12 relative flex justify-center sm:w-5/6 md:w-4/6 md:pb-1/3 lg:pb-1/3 lg:w-7/12 lg:mb-0 xl:pb-1/4 2xl:w-5/12 "
+    className: " pb-2/4 w-11/12 relative flex justify-center sm:w-5/6 md:w-4/6 md:pb-1/3 lg:pb-1/3 lg:w-7/12 lg:mb-0 xl:w-1/2 xl:pb-1/4 2xl:w-5/12 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: " absolute bottom-0 w-full h-auto  md:pb-0.25 lg:pb-0 xl:pb-0.75 2xl:pb-0.75",
     src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
