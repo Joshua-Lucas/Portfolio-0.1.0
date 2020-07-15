@@ -4,9 +4,9 @@ export const Backend = [
         title: 'backend',
         description: 'I strive to write clean and reusable code to create a scalable foundation to service the client\'s request.',
         section1: 'Languages I Know:',
-        language: ['PHP', 'C#', 'SQL'],
+        language: ['JavaScript','PHP', 'C#','SQL'],
         section2: 'Frameworks/Practices',
-        tools: ['Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles'],
+        tools: ['Node.Js','Laravel', 'ASP.NET MVC', 'MySQL', 'OOP', 'Solid Principles'],
         id: 1
     }
 
@@ -18,7 +18,7 @@ export const Frontend = [
         title: 'frontend',        
         description: 'I enjoy creating intuitive and responsive designs that offer a great user experience.',
         section1: 'Languages I Know:',
-        language: ['HTML', 'CSS', 'JavaScript'],
+        language: ['HTML', 'CSS', 'JavaScript','TypeScript'],
         section2: 'Frameworks/Practices',
         tools: ['React.Js', 'Tailwind CSS', 'Responsive Web Design', 'SPA'],
         id: 2
