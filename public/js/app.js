@@ -69939,6 +69939,17 @@ module.exports = "/images/team.svg?e90faffc99f2653149abb6b43d8cc652";
 
 /***/ }),
 
+/***/ "./resources/img/ThumbsUp.png":
+/*!************************************!*\
+  !*** ./resources/img/ThumbsUp.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/ThumbsUp.png?80dd22770e0fbee3619b192ff06149ca";
+
+/***/ }),
+
 /***/ "./resources/img/header/JLlogo.svg":
 /*!*****************************************!*\
   !*** ./resources/img/header/JLlogo.svg ***!
@@ -69947,6 +69958,17 @@ module.exports = "/images/team.svg?e90faffc99f2653149abb6b43d8cc652";
 /***/ (function(module, exports) {
 
 module.exports = "/images/JLlogo.svg?0959246ae46ddb3230e62273fb88772f";
+
+/***/ }),
+
+/***/ "./resources/img/header/animatedMe2.png":
+/*!**********************************************!*\
+  !*** ./resources/img/header/animatedMe2.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/animatedMe2.png?e122be1d674ba87aaa9acd9630fd2ea1";
 
 /***/ }),
 
@@ -70329,7 +70351,10 @@ var ContactPage = function ContactPage() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _img_ThumbsUp_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/ThumbsUp.png */ "./resources/img/ThumbsUp.png");
+/* harmony import */ var _img_ThumbsUp_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_ThumbsUp_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
@@ -70337,21 +70362,18 @@ var FlashThankYou = function FlashThankYou() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: " flex flex-col items-center w-full px-16 self-center md:m-auto opacity-100"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "rounded-full p-4 border-4 border-accent bg fade-in-up "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: " w-16 h-16 lg:w-24 lg:h-24  z-10 fill-current text-accent",
-    strokeWidth: "1",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 45.701 45.7"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M20.687,38.332c-2.072,2.072-5.434,2.072-7.505,0L1.554,26.704c-2.072-2.071-2.072-5.433,0-7.504 c2.071-2.072,5.433-2.072,7.505,0l6.928,6.927c0.523,0.522,1.372,0.522,1.896,0L36.642,7.368c2.071-2.072,5.433-2.072,7.505,0 c0.995,0.995,1.554,2.345,1.554,3.752c0,1.407-0.559,2.757-1.554,3.752L20.687,38.332z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rounded-full p-4 fade-in-up "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "  w-64 z-10 ",
+    src: _img_ThumbsUp_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    alt: "Me giving Thumbs up"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col justify-center items-center py-10  "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "capitalize text-center pb-8 text-3xl lg:text-4xl lg:pb-2"
   }, "Message sent"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "capitalize text-center text-lg lg:text-xl"
-  }, "I will get back with you soon."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "I will get back with you soon."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "w-11/12 mx-auto text-center p-2 mt-12 rounded-full border-2 border-secondary hover:bg-accent hover:border-accent hover:text-primary lg:w-3/5",
     to: "/"
   }, "Back to Portfolio")));
@@ -70478,12 +70500,16 @@ var Social = function Social() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/setup3.svg */ "./resources/img/setup3.svg");
-/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_setup3_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_header_animatedMe2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../img/header/animatedMe2.png */ "./resources/img/header/animatedMe2.png");
+/* harmony import */ var _img_header_animatedMe2_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_header_animatedMe2_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/setup3.svg */ "./resources/img/setup3.svg");
+/* harmony import */ var _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_setup3_svg__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
 var Banner = function Banner() {
+  var personalImg = "https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col items-center mt-10 px-5 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -70497,14 +70523,14 @@ var Banner = function Banner() {
   }, "Creating intuitive and responsive software with people in mind"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-4 self-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: " w-56 h-56  lg:w-64 lg:h-64 rounded-full border-2 border-secondary shadow-lg ",
-    src: "https://res.cloudinary.com/jlucompany/image/upload/v1589583341/Portfolio/Headshot_wwybb2.jpg",
+    className: " w-56   lg:w-64  ",
+    src: _img_header_animatedMe2_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     alt: "Pic of me"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: " pb-2/4 w-11/12 relative flex justify-center sm:w-5/6 md:w-4/6 md:pb-1/3 lg:pb-1/3 lg:w-7/12 lg:mb-0 xl:w-1/2 xl:pb-1/4 2xl:w-5/12 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: " absolute bottom-0 w-full h-auto  md:pb-0.25 lg:pb-0 xl:pb-0.75 2xl:pb-0.75",
-    src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    src: _img_setup3_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "my setup"
   })));
 };
